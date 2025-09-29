@@ -1,3 +1,5 @@
+'use client';
+
 import { FaBalanceScale } from "react-icons/fa";
 import { IoBarChartSharp } from "react-icons/io5";
 import { LiaLightbulb } from "react-icons/lia";
@@ -7,11 +9,26 @@ import { RiComputerLine } from "react-icons/ri";
 import { IoBookOutline } from "react-icons/io5";
 import { GiAtom } from "react-icons/gi";
 import { FaRegHandBackFist } from "react-icons/fa6";
+import React, { useEffect } from "react";
+import useReveal from "@/hooks/useReveal";
 
 import Image from "next/image";
 import Link from "next/link";
 
 const NuestroObjetivo = () => {
+
+  // Animación de revelado del texto
+  const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.18 });
+  const init = reveal?.init;
+  
+  useEffect(() => {
+    const cleanup = init?.();
+    return () => {
+      // si init devuelve función de cleanup, ejecutarla
+      if (typeof cleanup === "function") cleanup();
+    };
+  }, [init]);
+
   return (
     <section id="nuestro-objetivo" className="relative min-h-screen pb-10 pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -26,13 +43,13 @@ const NuestroObjetivo = () => {
       </div>
       
       <div className="container mx-auto text-white relative z-10 px-4 md:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-10 md:mb-25">NUESTRO OBJETIVO</h2>
+        <h2 data-reveal className="text-4xl md:text-5xl lg:text-7xl font-bold mb-10 md:mb-25 reveal">NUESTRO OBJETIVO</h2>
 
-        <p className="text-xl md:text-2xl lg:text-3xl mb-20 text-justify">
+        <p data-reveal className="text-xl md:text-2xl lg:text-3xl mb-20 text-justify reveal ">
           Ayudar a resolver algunos de los retos que enfrenta México en 9 áreas, a través de investigaciones, propuestas y ejecución de proyectos, que permitan tener un país más transparente, incluyente e innovador. Para ello aplicamos los principios de la INNOVACIÓN así como nuestra experiencia y conocimientos.
         </p>
 
-        <p className="text-xl md:text-2xl lg:text-3xl mb-20 font-bold text-center">
+        <p data-reveal className="text-xl md:text-2xl lg:text-3xl mb-20 font-bold text-center reveal">
           Además, buscamos que nuestros proyectos tengan un enfoque transversal que beneficie e impacte a las 9 áreas de trabajo:
         </p>
 
