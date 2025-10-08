@@ -1,6 +1,8 @@
 import TeamSection from "@/components/TeamSection"
 import Image from "next/image"
 import Link from "next/link"
+import WhatWeWant from "@/components/About/WhatWeWant"
+import HowWeDoIt from "@/components/About/HowWeDoIt"
 
 export default function AboutUs() {
   return (
@@ -33,31 +35,10 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Full-width images */}
+      {/* FIRST */}
       <div className="w-full relative mt-12">
-        <div className="w-full relative">
-          <div className="aspect-[16/9] sm:aspect-[2/1] md:aspect-[21/9] relative">
-            <Image
-              src="/QUEPRETENDEMOS_VE.png"
-              alt="Our Aim"
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 100vw"
-              className="object-contain"
-            />
-          </div>
-        </div>
-
-        <div className="w-full relative mt-12">
-          <div className="aspect-[16/9] sm:aspect-[2/1] md:aspect-[21/9] relative">
-            <Image
-              src="/COMOLOHACEMOS_VE.png"
-              alt="How We Achieve It"
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 100vw"
-              className="object-contain"
-            />
-          </div>
-        </div>
+        <WhatWeWant />
+        <HowWeDoIt />
       </div>
       
       <div className="container mx-auto px-4 py-16 max-w-5xl">

@@ -1,3 +1,5 @@
+import ComoLoHacemos from '@/components/Inicio/ComoLoHacemos'
+import QuePretendemos from '@/components/Inicio/QuePretendemos'
 import LazyYouTube from '@/components/lazyYoutube'
 import TeamSection from '@/components/TeamSection'
 import Image from 'next/image'
@@ -13,33 +15,11 @@ export default function QuienesSomos() {
           <LazyYouTube id="0DRcerJtk_c" />
         </div>
 
-        {/* Imagen 1 */}
-        <div className="w-full flex justify-center px-2 md:px-0">
-          <div className="aspect-[16/9] sm:aspect-[2/1] md:aspect-[21/9] relative mt-12 max-w-5xl w-full rounded-xl overflow-hidden shadow-md animate-fade-in-up">
-            <Image
-              src="/QUEPRETENDEMOS_VS.png"
-              alt="Nuestro equipo trabajando"
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 100vw"
-              className="object-contain"
-              priority
-            />
-          </div>
+        <div className="w-full relative mt-12">
+          <QuePretendemos />
+          <ComoLoHacemos />
         </div>
 
-        {/* Imagen 2 */}
-        <div className="w-full flex justify-center">
-          <div className="aspect-[16/9] sm:aspect-[2/1] md:aspect-[21/9] relative mt-12 max-w-5xl w-full rounded-xl overflow-hidden shadow-md animate-fade-in-up delay-100">
-            <Image
-              src="/COMOLOHACEMOS_VE.png"
-              alt="Cómo lo hacemos"
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 100vw"
-              className="object-contain"
-              priority
-            />
-          </div>
-        </div>
       </div>
 
       {/* Sección de publicaciones */}
