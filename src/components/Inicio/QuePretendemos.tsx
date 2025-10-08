@@ -10,7 +10,7 @@ import useReveal from "@/hooks/useReveal";
 const QuePretendemos = () => {
   const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.18 });
   const init = reveal?.init;
-  const [hoveredIcon, setHoveredIcon] = useState(null);
+  const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
 
   useEffect(() => {
     const cleanup = init?.();

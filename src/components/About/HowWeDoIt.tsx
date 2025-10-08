@@ -62,7 +62,21 @@ const steps = [
     },
 ];
 
-const StepComponent = ({ step, index, isActive, onHover, onLeave }) => {
+type Step = {
+  label: string;
+  description: string;
+  image: string;
+};
+
+type StepComponentProps = {
+  step: Step;
+  index: number;
+  isActive: boolean;
+  onHover: (index: number) => void;
+  onLeave: () => void;
+};
+
+const StepComponent: React.FC<StepComponentProps> = ({ step, index, isActive, onHover, onLeave }) => {
   const IconComponent = stepIcons[index].icon;
   const delay = index * 100;
 
