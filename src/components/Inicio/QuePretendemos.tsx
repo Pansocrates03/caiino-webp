@@ -55,11 +55,11 @@ const QuePretendemos = () => {
   ];
 
   return (
-    <section id="que-pretendemos" className="relative min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-6 sm:py-8 md:py-10 overflow-hidden flex flex-col">
+    <section id="que-pretendemos" className="relative min-h-screen bg-gradient-to-br from-white via-blue-100 to-indigo-200/90 py-6 sm:py-8 md:py-10 overflow-hidden flex flex-col">
       {/* Elementos decorativos de fondo */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-blue-200/20 rounded-full blur-2xl animate-pulse"></div>
-      <div className="absolute bottom-20 left-10 w-48 h-48 bg-cyan-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-blue-300/30 rounded-full blur-xl animate-bounce delay-500"></div>
+      <div className="absolute top-10 right-10 w-32 h-32 bg-indigo-300/50 rounded-full blur-2xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-10 w-48 h-48 bg-blue-300/50 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-violet-400/60 rounded-full blur-xl animate-bounce delay-500"></div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 flex flex-col justify-center flex-1 max-w-7xl">
         {/* Header */}
