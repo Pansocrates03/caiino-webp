@@ -117,7 +117,10 @@ const QuePretendemos = () => {
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-400/0 to-cyan-400/0 group-hover:from-blue-400/20 group-hover:to-cyan-400/20 rounded-full transition-all duration-300"></div>
                       
                       <div className="flex flex-col items-center justify-center relative z-10">
-                        <item.icon className="icon-size text-blue-600 group-hover:text-blue-700 transition-colors duration-300 drop-shadow-sm" />
+                        <item.icon 
+                          className="text-blue-600 group-hover:text-blue-700 transition-colors duration-300 drop-shadow-sm" 
+                          style={{ fontSize: '2rem', width: '2rem', height: '2rem' }}
+                        />
                       </div>
 
                       {/* Pulso animado */}
@@ -175,10 +178,10 @@ const QuePretendemos = () => {
         {/* Sección de estadísticas - Más compacta */}
         <div className="mt-4 sm:mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
           {[
-            { number: "15+", label: "Proyectos activos" },
-            { number: "50+", label: "Colaboradores" },
-            { number: "3", label: "Sectores" },
-            { number: "10+", label: "Publicaciones" }
+            { number: "10+", label: "Reformas de ley" },
+            { number: "100+", label: "Citas de entes públicos" },
+            { number: "4", label: "Sectores" },
+            { number: "19", label: "Publicaciones" }
           ].map((stat, index) => (
             <div 
               key={index}
@@ -253,8 +256,8 @@ const QuePretendemos = () => {
         /* Círculos de iconos - Responsive */
         .icon-circle {
           position: relative;
-          width: 60px;
-          height: 60px;
+          width: 80px;
+          height: 80px;
           background: linear-gradient(to bottom right, white, rgb(239 246 255));
           border-radius: 50%;
           box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -270,29 +273,29 @@ const QuePretendemos = () => {
 
         @media (min-width: 480px) {
           .icon-circle {
-            width: 70px;
-            height: 70px;
+            width: 95px;
+            height: 95px;
           }
         }
 
         @media (min-width: 640px) {
           .icon-circle {
-            width: 80px;
-            height: 80px;
+            width: 110px;
+            height: 110px;
           }
         }
 
         @media (min-width: 768px) {
           .icon-circle {
-            width: 90px;
-            height: 90px;
+            width: 120px;
+            height: 120px;
           }
         }
 
         @media (min-width: 1024px) {
           .icon-circle {
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
           }
         }
 
@@ -301,32 +304,42 @@ const QuePretendemos = () => {
           box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
         }
 
-        /* Tamaños de iconos - Responsive */
+        /* Tamaños de iconos - AUMENTADOS */
         .icon-size {
-          font-size: 2rem;
+          font-size: 3.5rem;
+          width: 3.5rem;
+          height: 3.5rem;
         }
 
         @media (min-width: 480px) {
           .icon-size {
-            font-size: 2.25rem;
+            font-size: 4rem;
+            width: 4rem;
+            height: 4rem;
           }
         }
 
         @media (min-width: 640px) {
           .icon-size {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
+            width: 4.5rem;
+            height: 4.5rem;
           }
         }
 
         @media (min-width: 768px) {
           .icon-size {
-            font-size: 2.75rem;
+            font-size: 5rem;
+            width: 5rem;
+            height: 5rem;
           }
         }
 
         @media (min-width: 1024px) {
           .icon-size {
-            font-size: 3rem;
+            font-size: 5.5rem;
+            width: 5.5rem;
+            height: 5.5rem;
           }
         }
 

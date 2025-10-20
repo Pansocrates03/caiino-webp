@@ -86,16 +86,6 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="#" className="hover:underline">
-                    Estado General de la Educación
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:underline">
-                    Nuevos Proyectos
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:underline">
                     Índice Nacional de CTI 2015
                   </Link>
                 </li>

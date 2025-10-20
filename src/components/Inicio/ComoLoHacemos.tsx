@@ -139,7 +139,7 @@ const StepComponent: React.FC<StepComponentProps> = ({ step, index, isActive, on
           </div>
 
           {/* Descripción */}
-          <p className={`text-gray-600 leading-relaxed transition-all duration-300 ${
+          <p className={`text-lg text-gray-600 leading-relaxed transition-all duration-300 ${
             isActive ? 'text-gray-700 opacity-100' : 'opacity-80 group-hover:opacity-100'
           }`}>
             {step.description}

@@ -45,7 +45,7 @@ const ImpactoSection = () => {
                 <div className="relative mb-6 overflow-hidden rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500">
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <Image
-                    src="/ImpactoImg.png" 
+                    src="/portada-impacto.jpg" 
                     alt="Para mejorar el mundo"
                     width={700}
                     height={400}
