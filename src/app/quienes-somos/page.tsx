@@ -1,17 +1,32 @@
+'use client';
+import React, { useEffect } from "react";
+import useReveal from "@/hooks/useReveal";
 import ComoLoHacemos from '@/components/Inicio/ComoLoHacemos'
 import QuePretendemos from '@/components/Inicio/QuePretendemos'
 import LazyYouTube from '@/components/lazyYoutube'
 import TeamSection from '@/components/TeamSection'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 export default function QuienesSomos() {
+
+  // Animación de revelado del texto
+      const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.18 });
+      const init = reveal?.init;
+      
+      useEffect(() => {
+        const cleanup = init?.();
+        return () => {
+          // si init devuelve función de cleanup, ejecutarla
+          if (typeof cleanup === "function") cleanup();
+        };
+      }, [init]);
+
   return (
     <>
       <div className="flex flex-col items-center bg-gradient-to-b from-blue-50 via-white to-white min-h-screen">
         {/* YouTube Video */}
-        <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg mt-8 animate-fade-in">
+        <div data-reveal className="reveal w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg mt-8 animate-fade-in">
           <LazyYouTube id="0DRcerJtk_c" />
         </div>
 
@@ -24,7 +39,7 @@ export default function QuienesSomos() {
 
       {/* Sección de publicaciones */}
       <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
-        <div className="bg-white/80 rounded-2xl shadow-lg p-8 sm:p-12 text-center border border-blue-100 animate-fade-in-up">
+        <div data-reveal className="reveal bg-white/80 rounded-2xl shadow-lg p-8 sm:p-12 text-center border border-blue-100 animate-fade-in-up">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 sm:mb-6 text-blue-800">
             Explora nuestro trabajo
           </h2>

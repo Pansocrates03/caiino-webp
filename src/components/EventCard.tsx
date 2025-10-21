@@ -1,8 +1,8 @@
 "use client";
-
+import React, { useState, useEffect } from 'react';
+import useReveal from "@/hooks/useReveal";
 import { Event } from "@/models/Event";
 import Image from "next/image";
-import { useState } from "react";
 import { ImageGallery } from "./ImageGallery";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
@@ -16,8 +16,20 @@ export function EventCard({ item }: EventCardProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const formattedDate = format(new Date(item.date), "dd 'de' MMMM yyyy", { locale: es });
 
+  // Animación de revelado del texto
+      const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.5 });
+      const init = reveal?.init;
+      
+      useEffect(() => {
+        const cleanup = init?.();
+        return () => {
+          // si init devuelve función de cleanup, ejecutarla
+          if (typeof cleanup === "function") cleanup();
+        };
+      }, [init]);
+
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+    <div data-reveal className="reveal bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
       {/* Imagen principal */}
       <div className="relative aspect-[16/9] cursor-pointer group" onClick={() => setIsGalleryOpen(true)}>
         <Image

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import useReveal from "@/hooks/useReveal";
 import { 
   Search, 
   BarChart3, 
@@ -161,6 +162,18 @@ const ComoLoHacemos = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
+   // Animación de revelado del texto
+    const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.18 });
+    const init = reveal?.init;
+    
+    useEffect(() => {
+      const cleanup = init?.();
+      return () => {
+        // si init devuelve función de cleanup, ejecutarla
+        if (typeof cleanup === "function") cleanup();
+      };
+    }, [init]);
+
   useEffect(() => {
     setIsVisible(true);
     // removed auto-cycle interval: steps only activate on hover/focus
@@ -194,7 +207,7 @@ const ComoLoHacemos = () => {
           <div className={`transition-all duration-1000 transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <h2 data-reveal className="reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
               ¿CÓMO LO HACEMOS?
             </h2>
             
