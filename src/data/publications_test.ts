@@ -191,137 +191,137 @@ export const publications: Publication[] = [
             tags: ['COVID-19', 'Automation', 'Creative Economy']
           }
         }
+    },
+    {
+      id: '4',
+       slug: 'economia-creativa-mexico',
+       date: '2024',
+       media: [
+         {
+           type: 'image',
+           url: '/publications/ecm-1.png',
+           alt: 'Economía Creativa México'
+         }
+      ],
+      downloadLink: {
+        'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/09/Economia-Creativa.pdf',
+        'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/10/Creative-Economy-final.pdf'
       },
-      {
-        id: '4',
-        slug: 'economia-creativa-mexico',
-        date: '2024',
-        media: [
-          {
-            type: 'image',
-            url: '/publications/ecm-1.png',
-            alt: 'Economía Creativa México'
-          }
-        ],
-        downloadLink: {
-          'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/09/Economia-Creativa.pdf',
-          'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/10/Creative-Economy-final.pdf'
+      multilingual: {
+        es: {
+          title: 'Economía creativa: México y su impacto en la economía nacional',
+          description: 'Análisis del impacto de la economía creativa en México',
+          content: [
+            {
+              type: 'paragraph',
+              content: 'Análisis del impacto de la economía creativa en México'
+            },
+            {
+              type: 'heading',
+              content: 'Descarga nuestra publicación en este link',
+              downloadKey: 'spanish-version'
+            },
+            {
+              type: 'heading',
+              content: 'Download the English version of the publication in this link',
+              downloadKey: 'english-version'
+            }
+          ],
+          tags: ['Economía Creativa', 'México', 'Impacto Económico']
         },
-        multilingual: {
-          es: {
-            title: 'Economía creativa: México y su impacto en la economía nacional',
-            description: 'Análisis del impacto de la economía creativa en México',
-            content: [
-              {
-                type: 'paragraph',
-                content: 'Análisis del impacto de la economía creativa en México'
-              },
-              {
-                type: 'heading',
-                content: 'Descarga nuestra publicación en este link',
-                downloadKey: 'spanish-version'
-              },
-              {
-                type: 'heading',
-                content: 'Download the English version of the publication in this link',
-                downloadKey: 'english-version'
-              }
-            ],
-            tags: ['Economía Creativa', 'México', 'Impacto Económico']
-          },
-          en: {
-            title: 'Creative economy: Mexico and its impact on the national economy',
-            description: 'Analysis of the impact of the creative economy in Mexico',
-            content: [
-              {
-                type: 'paragraph',
-                content: 'Analysis of the impact of the creative economy in Mexico'
-              },
-              {
-                type: 'heading',
-                content: 'Download the English version of the publication in this link',
-                downloadKey: 'english-version'
-              },
-              {
-                type: 'heading',
-                content: 'Download the Spanish version of the publication in this link',
-                downloadKey: 'spanish-version'
-              }
-            ],
-            tags: ['Creative Economy', 'Mexico', 'Economic Impact']
-          }
+        en: {
+          title: 'Creative economy: Mexico and its impact on the national economy',
+          description: 'Analysis of the impact of the creative economy in Mexico',
+          content: [
+            {
+              type: 'paragraph',
+              content: 'Analysis of the impact of the creative economy in Mexico'
+            },
+            {
+              type: 'heading',
+              content: 'Download the English version of the publication in this link',
+              downloadKey: 'english-version'
+            },
+            {
+              type: 'heading',
+              content: 'Download the Spanish version of the publication in this link',
+              downloadKey: 'spanish-version'
+            }
+          ],
+          tags: ['Creative Economy', 'Mexico', 'Economic Impact']
         }
-      },
-      {
-        id: '5',
-        slug: 'economia-creativa',
-        date: '2024',
-        media: [
-          {
-            type: 'image',
-            url: '/publications/bi_slider.jpg',
-            alt: 'Economía Creativa'
-          },
-          {
-            type: 'image',
-            url: '/publications/convocatoria-a-investigadores.png',
-            alt: 'Economía Creativa'
-          },
-          {
-            type: 'youtube',
-            url: '0M7YtW3MTjs',
-            alt: 'Economía Creativa'
-          }
-        ],
-        downloadLink: {
-          'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
-          'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
+      }
+    },
+    {
+      id: '5',
+      slug: 'economia-creativa',
+      date: '2024',
+      media: [
+        {
+          type: 'image',
+          url: '/publications/bi_slider.jpg',
+          alt: 'Economía Creativa'
         },
-        multilingual: {
-          es: {
-            title: 'Economía del conocimiento y economía creativa como herramientas para salir de la crisis generada por el COVID-19 en América Latina y el Caribe: un enfoque hacía la Alianza del Pacífico', 
-            description: 'Estudio sobre la economía creativa',
-            content: [
-              {
-                type: 'paragraph',
-                content: 'Estudio sobre la economía creativa'
-              },
-              {
-                type: 'heading',
-                content: 'Descarga nuestra publicación en este link',
-                downloadKey: 'spanish-version'
-              },
-              {
-                type: 'heading',
-                content: 'Download the English version of the publication in this link',
-                downloadKey: 'english-version'
-              }
-            ],
-            tags: ['Economía Creativa', 'Innovación']
-          },
-          en: {
-            title: 'Knowledge economy and creative economy as tools to overcome the crisis generated by COVID-19 in Latin America and the Caribbean: a focus on the Pacific Alliance',
-            description: 'Study on the creative economy',
-            content: [
-              {
-                type: 'paragraph',
-                content: 'Study on the creative economy'
-              },
-              {
-                type: 'heading',
-                content: 'Download the English version of the publication in this link',
-                downloadKey: 'english-version'
-              },
-              {
-                type: 'heading',
-                content: 'Download the Spanish version of the publication in this link',
-                downloadKey: 'spanish-version'
-              }
-            ],
-            tags: ['Creative Economy', 'Innovation']
-          }
+        {
+          type: 'image',
+          url: '/publications/convocatoria-a-investigadores.png',
+          alt: 'Economía Creativa'
+        },
+        {
+          type: 'youtube',
+          url: '0M7YtW3MTjs',
+          alt: 'Economía Creativa'
         }
+      ],
+      downloadLink: {
+        'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
+        'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
       },
+      multilingual: {
+        es: {
+          title: 'Economía del conocimiento y economía creativa como herramientas para salir de la crisis generada por el COVID-19 en América Latina y el Caribe: un enfoque hacía la Alianza del Pacífico', 
+          description: 'Estudio sobre la economía creativa',
+          content: [
+            {
+              type: 'paragraph',
+              content: 'Estudio sobre la economía creativa'
+            },
+            {
+              type: 'heading',
+              content: 'Descarga nuestra publicación en este link',
+              downloadKey: 'spanish-version'
+            },
+            {
+              type: 'heading',
+              content: 'Download the English version of the publication in this link',
+              downloadKey: 'english-version'
+            }
+          ],
+          tags: ['Economía Creativa', 'Innovación']
+        },
+        en: {
+          title: 'Knowledge economy and creative economy as tools to overcome the crisis generated by COVID-19 in Latin America and the Caribbean: a focus on the Pacific Alliance',
+          description: 'Study on the creative economy',
+          content: [
+            {
+              type: 'paragraph',
+              content: 'Study on the creative economy'
+            },
+            {
+              type: 'heading',
+              content: 'Download the English version of the publication in this link',
+              downloadKey: 'english-version'
+            },
+            {
+              type: 'heading',
+              content: 'Download the Spanish version of the publication in this link',
+              downloadKey: 'spanish-version'
+            }
+          ],
+          tags: ['Creative Economy', 'Innovation']
+        }
+      }
+    },
       /*{
         id: '6',
         slug: 'industrias-creativas',
@@ -358,79 +358,79 @@ export const publications: Publication[] = [
           }
         }
       },*/
+  {
+    id: '7',
+    slug: 'mujeres-inventoras',
+    date: '2024',
+    media: [
       {
-        id: '7',
-        slug: 'mujeres-inventoras',
-        date: '2024',
-        media: [
+        type: 'image',
+        url: '/publications/mujeres-inventoras.png',
+        alt: 'Imagen Mujeres Inventoras'
+      },
+      {
+        type: 'youtube',
+        url: 'ocekswReZIA',
+        alt: 'Video sobre Mujeres Inventoras'
+      }
+    ],
+    downloadLink: {
+      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
+      'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mexican-women-inventors-CAIINNO.pdf'
+    },
+    multilingual: {
+      es: {
+        title: 'Mujeres Inventoras: Patentando en México',
+        description: 'Investigación sobre mujeres inventoras y patentes en México, incluyendo análisis de los períodos 2014-2016 y 2017-2020.',
+        content: [
           {
-            type: 'image',
-            url: '/publications/mujeres-inventoras.png',
-            alt: 'Imagen Mujeres Inventoras'
+            type: 'heading',
+            content: 'Publicación 2017-2020 (Versión Español)',
+            downloadKey: 'spanish-version'
           },
           {
-            type: 'youtube',
-            url: 'ocekswReZIA',
-            alt: 'Video sobre Mujeres Inventoras'
+            type: 'paragraph',
+            content: 'Para descargar nuestra publicación sobre Mujeres Inventoras 2017-2020 (Versión Español): Patentando en México'
+          },
+          {
+            type: 'heading',
+            content: 'Publicación 2017-2020 (Versión Inglés)',
+            downloadKey: 'english-version'
+          },
+          {
+            type: 'paragraph',
+            content: 'Para descargar nuestra publicación sobre Mujeres Inventoras 2017-2020 (Versión Inglés): Patentando en México'
           }
         ],
-        downloadLink: {
-          'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
-          'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mexican-women-inventors-CAIINNO.pdf'
-        },
-        multilingual: {
-          es: {
-            title: 'Mujeres Inventoras: Patentando en México',
-            description: 'Investigación sobre mujeres inventoras y patentes en México, incluyendo análisis de los períodos 2014-2016 y 2017-2020.',
-            content: [
-              {
-                type: 'heading',
-                content: 'Publicación 2017-2020 (Versión Español)',
-                downloadKey: 'spanish-version'
-              },
-              {
-                type: 'paragraph',
-                content: 'Para descargar nuestra publicación sobre Mujeres Inventoras 2017-2020 (Versión Español): Patentando en México'
-              },
-              {
-                type: 'heading',
-                content: 'Publicación 2017-2020 (Versión Inglés)',
-                downloadKey: 'english-version'
-              },
-              {
-                type: 'paragraph',
-                content: 'Para descargar nuestra publicación sobre Mujeres Inventoras 2017-2020 (Versión Inglés): Patentando en México'
-              }
-            ],
-            tags: ['Mujeres Inventoras', 'Patentes', 'Investigación', 'PatentesRosas']
-          },
-          en: {
-            title: 'Women Inventors: Patenting in Mexico',
-            description: 'Research on women inventors and patents in Mexico, including analysis for the periods 2014–2016 and 2017–2020.',
-            content: [
-              {
-                type: 'heading',
-                content: 'Publication 2017-2020 (Spanish Version)',
-                downloadKey: 'spanish-version'
-              },
-              {
-                type: 'paragraph',
-                content: 'Download our Spanish-language publication on Women Inventors 2017-2020: Patenting in Mexico'
-              },
-              {
-                type: 'heading',
-                content: 'Publication 2017-2020 (English Version)',
-                downloadKey: 'english-version'
-              },
-              {
-                type: 'paragraph',
-                content: 'Download our English-language publication on Women Inventors 2017-2020: Patenting in Mexico'
-              }
-            ],
-            tags: ['Women Inventors', 'Patents', 'Research', 'PinkPatents']
-          }
-        }
+        tags: ['Mujeres Inventoras', 'Patentes', 'Investigación', 'PatentesRosas']
       },
+      en: {
+        title: 'Women Inventors: Patenting in Mexico',
+        description: 'Research on women inventors and patents in Mexico, including analysis for the periods 2014–2016 and 2017–2020.',
+        content: [
+          {
+            type: 'heading',
+            content: 'Publication 2017-2020 (Spanish Version)',
+            downloadKey: 'spanish-version'
+          },
+          {
+            type: 'paragraph',
+            content: 'Download our Spanish-language publication on Women Inventors 2017-2020: Patenting in Mexico'
+          },
+          {
+            type: 'heading',
+            content: 'Publication 2017-2020 (English Version)',
+            downloadKey: 'english-version'
+          },
+          {
+            type: 'paragraph',
+            content: 'Download our English-language publication on Women Inventors 2017-2020: Patenting in Mexico'
+          }
+        ],
+        tags: ['Women Inventors', 'Patents', 'Research', 'PinkPatents']
+      }
+    }
+  },
       /*{
         id: '11',
         slug: 'alumni-engagement-innovation-found',
@@ -457,48 +457,48 @@ export const publications: Publication[] = [
           }
         }
       },*/
+  {
+    id: '13',
+    slug: 'propiedad-intelectual-creatividad',
+    date: '2017',
+    media: [
       {
-        id: '13',
-        slug: 'propiedad-intelectual-creatividad',
-        date: '2017',
-        media: [
+        type: 'image',
+        url: '/publications/fesf.png',
+        alt: 'Propiedad Intelectual para el Desarrollo de México'
+      }
+    ],
+    multilingual: {
+      es: {
+        title: 'Propiedad Intelectual, Creatividad e Innovación para el Desarrollo de México',
+        description: '',
+        content: [
           {
-            type: 'image',
-            url: '/publications/fesf.png',
-            alt: 'Propiedad Intelectual para el Desarrollo de México'
+            type: 'heading',
+            content: 'Descarga nuestra publicación en este link',
+            downloadKey: 'spanish-version'
           }
         ],
-        multilingual: {
-          es: {
-            title: 'Propiedad Intelectual, Creatividad e Innovación para el Desarrollo de México',
-            description: '',
-            content: [
-              {
-                type: 'heading',
-                content: 'Descarga nuestra publicación en este link',
-                downloadKey: 'spanish-version'
-              }
-            ],
-            tags: ['Propiedad Intelectual', 'Creatividad', 'Innovación']
-          },
-          en: {
-            title: 'Intellectual Property, Creativity and Innovation for Mexico\'s Development',
-            description: '',
-            content: [
-              {
-                type: 'heading',
-                content: 'Download our publication in this link',
-                downloadKey: 'spanish-version'
-              }
-            ],
-            tags: ['Intellectual Property', 'Creativity', 'Innovation']
+        tags: ['Propiedad Intelectual', 'Creatividad', 'Innovación']
+      },
+      en: {
+        title: 'Intellectual Property, Creativity and Innovation for Mexico\'s Development',
+        description: '',
+        content: [
+          {
+            type: 'heading',
+            content: 'Download our publication in this link',
+            downloadKey: 'spanish-version'
           }
-        },
-        downloadLink: {
-          'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/07/PI-Algunas-Propuestas-CAIINNO.pdf'
-        }
-      },  
-    {
+        ],
+        tags: ['Intellectual Property', 'Creativity', 'Innovation']
+      }
+    },
+    downloadLink: {
+      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/07/PI-Algunas-Propuestas-CAIINNO.pdf'
+    }
+  },  
+  {
     id: '16',
     slug: 'formacion-ciudadana-para-emprendedores',
     date: '2018',
@@ -933,7 +933,7 @@ export const publications: Publication[] = [
       'english-version': 'https://www.caiinno.org/wp-content/uploads/2020/07/Women-inventors.pdf'
     }
   },
-    {
+  {
     id: '26',
     slug: 'formacion-civica-y-etica-en-mexico',
     date: '2017',
@@ -1058,10 +1058,48 @@ export const publications: Publication[] = [
     downloadLink: {
       'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/RAMO-38-2016-2017.pdf'
     }
+  },
+  {
+    id: '29',
+    slug: 'mujeres-obtentoras',
+    date: '2025',
+    media: [
+      {
+        type: 'image',
+        url: '/publicaciones/1/portada.png',
+        alt: ''
+      }
+    ],
+    multilingual: {
+      es: {
+        title: 'Mujeres Obtentoras en México del 2019 al 2023',
+        description: '',
+        content: [
+          {
+            type: 'heading',
+            content: 'Descarga nuestra publicación en este link',
+            downloadKey: 'spanish-version'
+          }
+        ],
+        tags: ['Observatorio Electoral', 'Ciencia', 'Tecnología', 'Ramo 38']
+      },
+      en: {
+        title: 'Women Plant Breeders in Mexico from 2019 to 2023',
+        description: '',
+        content: [
+          {
+            type: 'heading',
+            content: 'Download our publication in this link',
+            downloadKey: 'spanish-version'
+          }
+        ],
+        tags: ['Electoral Observatory', 'Science', 'Technology', 'Branch 38']
+      
+      },
+    },
+    downloadLink: {
+      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/RAMO-38-2016-2017.pdf',
+      'english-version': 'https://www.caiinno.org/wp-content/uploads/2025/06/mujeresobtentoras2023.pdf'
+    }
   }
 ];
-
-
-
-
-
