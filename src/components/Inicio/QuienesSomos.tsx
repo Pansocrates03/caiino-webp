@@ -20,12 +20,12 @@ const QuienesSomos = () => {
   return (
     <section id="quienes-somos" className="relative lg:min-h-screen py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
         <img
-          src="/DNA.svg"
+          src="/icons/DNA.svg"
           alt="DNA background"
           className="hidden lg:block absolute bottom-[8%] left-[8%] w-[28%] max-w-[450px] opacity-70 pointer-events-none transform rotate-12"
         />
         <img
-          src="/DNA.svg"
+          src="/icons/DNA.svg"
           alt="DNA background"
           className="hidden lg:block absolute top-[35%] right-[8%] w-[25%] max-w-[400px] opacity-25 pointer-events-none transform -rotate-12"
         />

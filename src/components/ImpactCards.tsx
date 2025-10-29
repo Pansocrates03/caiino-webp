@@ -12,7 +12,7 @@ export default function ImpactCards() {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8 rounded-lg border-l-4 border-black bg-white text-black">
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex-shrink-0">
             <Image
-              src="/REFORMAS.png"
+              src="/icons/REFORMAS.png"
               alt="icono reformas de ley"
               fill
               className="object-contain"
@@ -32,7 +32,7 @@ export default function ImpactCards() {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8 rounded-lg border-l-4 border-black bg-white text-black">
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex-shrink-0">
             <Image
-              src="/INFORMACION_CONFIABLE.png"
+              src="/icons/INFORMACION_CONFIABLE.png"
               alt="icono agendas"
               fill
               className="object-contain"
@@ -54,7 +54,7 @@ export default function ImpactCards() {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8 rounded-lg border-l-4 border-black bg-white text-black">
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex-shrink-0">
             <Image
-              src="/INVESTIGACIONES_CON_IMPACTO.png"
+              src="/icons/INVESTIGACIONES_CON_IMPACTO.png"
               alt="icono libros"
               fill
               className="object-contain"
