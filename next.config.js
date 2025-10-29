@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  
   images: {
     remotePatterns: [
       {
@@ -13,7 +14,7 @@ const nextConfig = {
       },
     ],
   },
-  // Other config options...
+  output: 'export', // Quitar si se usa SSR, dejar solo para exportacion estatica
 };
 
 module.exports = nextConfig;

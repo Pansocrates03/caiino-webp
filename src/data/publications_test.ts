@@ -8,13 +8,13 @@ export const publications: Publication[] = [
         media: [
             {
                 type: 'image',
-                url: '/publications/patentes-verdes-en-mexico.png',
+                url: '/publicaciones/1/patentes-verdes-en-mexico.png',
                 alt: 'Patentes verdes en México'
             }
         ],
         downloadLink: {
-            'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2024/10/Patentes-verdes-final-CAIINNO.pdf',
-            'english-version': 'https://www.caiinno.org/wp-content/uploads/2024/10/fi-Green-Patents-and-Gender-Identification-in-Mexi_241028_162912.pdf' 
+            'spanish-version': '/publicaciones/1/Patentes-verdes-final-CAIINNO.pdf',
+            'english-version': '/publicaciones/1/fi-Green-Patents-and-Gender-Identification-in-Mexi_241028_162912.pdf'  
         },
         multilingual: {
             es: {
@@ -68,14 +68,14 @@ export const publications: Publication[] = [
         media: [
             {
                 type: 'image',
-                url: '/publications/glipa_pres.png',
+                url: '/publicaciones/2/glipa_pres.png',
                 alt: 'Mujeres Inventoras América Latina'
             }
         ],
         downloadLink: {
-            'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2023/08/Mujeres-CAIINNO-GLIPA.pdf',
-            'english-version': 'https://www.caiinno.org/wp-content/uploads/2024/01/INGLES-CAIINNO-GLIPA.pdf',
-            'portugues-version': 'https://www.caiinno.org/wp-content/uploads/2024/01/PORTUGUES-CAIINNO-GLIPA.pdf'
+            'spanish-version': '/publicaciones/2/Mujeres-CAIINNO-GLIPA.pdf',
+            'english-version': '/publicaciones/2/INGLES-CAIINNO-GLIPA.pdf',
+            'portugues-version': '/publicaciones/2/PORTUGUES-CAIINNO-GLIPA.pdf'
         },
         multilingual: {
             es: {
@@ -139,13 +139,13 @@ export const publications: Publication[] = [
         media: [
           {
             type: 'image',
-            url: '/publications/automat.jpg',
+            url: '/publicaciones/3/automat.jpg',
             alt: 'Automatización de empleos en la economía creativa'
           }
         ],
         downloadLink: {
-          'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2023/02/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
-          'english-version': 'https://www.caiinno.org/wp-content/uploads/2023/02/PROBABILITY-OF-JOB-AUTOMATION-IN-THE-MEXICAN-CREATIVE-ECONOMY.pdf'
+          'spanish-version': '/publicaciones/3/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
+          'english-version': '/publicaciones/3/PROBABILITY-OF-JOB-AUTOMATION-IN-THE-MEXICAN-CREATIVE-ECONOMY.pdf'
         },
         multilingual: {
           es: {
@@ -199,13 +199,13 @@ export const publications: Publication[] = [
        media: [
          {
            type: 'image',
-           url: '/publications/ecm-1.png',
+           url: '/publicaciones/4/ecm-1.png',
            alt: 'Economía Creativa México'
          }
       ],
       downloadLink: {
-        'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/09/Economia-Creativa.pdf',
-        'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/10/Creative-Economy-final.pdf'
+        'spanish-version': '/publicaciones/4/Economia-Creativa.pdf',
+        'english-version': '/publicaciones/4/Creative-Economy-final.pdf'
       },
       multilingual: {
         es: {
@@ -259,12 +259,12 @@ export const publications: Publication[] = [
       media: [
         {
           type: 'image',
-          url: '/publications/bi_slider.jpg',
+          url: '/publicaciones/5/bi_slider.jpg',
           alt: 'Economía Creativa'
         },
         {
           type: 'image',
-          url: '/publications/convocatoria-a-investigadores.png',
+          url: '/publicaciones/5/convocatoria-a-investigadores.png',
           alt: 'Economía Creativa'
         },
         {
@@ -274,8 +274,8 @@ export const publications: Publication[] = [
         }
       ],
       downloadLink: {
-        'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
-        'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/01/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
+        'spanish-version': '/publicaciones/5/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
+        'english-version': '/publicaciones/5/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
       },
       multilingual: {
         es: {
@@ -365,7 +365,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/mujeres-inventoras.png',
+        url: '/publicaciones/7/mujeres-inventoras.png',
         alt: 'Imagen Mujeres Inventoras'
       },
       {
@@ -375,8 +375,8 @@ export const publications: Publication[] = [
       }
     ],
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
-      'english-version': 'https://www.caiinno.org/wp-content/uploads/2022/04/Mexican-women-inventors-CAIINNO.pdf'
+      'spanish-version': '/publicaciones/7/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
+      'english-version': '/publicaciones/7/Mexican-women-inventors-CAIINNO.pdf'
     },
     multilingual: {
       es: {
@@ -464,7 +464,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/fesf.png',
+        url: '/publicaciones/13/fesf.png',
         alt: 'Propiedad Intelectual para el Desarrollo de México'
       }
     ],
@@ -495,7 +495,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/07/PI-Algunas-Propuestas-CAIINNO.pdf'
+      'spanish-version': '/publicaciones/13/PI-Algunas-Propuestas-CAIINNO.pdf'
     }
   },  
   {
@@ -505,7 +505,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/formacion-ciudadana-emprendedores.jpg',
+        url: '/publicaciones/16/formacion-ciudadana-emprendedores.jpg',
         alt: 'Formación Ciudadana para Emprendedores'
       },
       {
@@ -570,14 +570,14 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'formacion-civica-etica': 'https://www.caiinno.org/wp-content/uploads/2017/07/formacion-civica1.pdf',
-      'resumen-ejecutivo': 'https://www.caiinno.org/wp-content/uploads/2017/07/Resumen-ejecutivo.pdf',
-      'emprendimiento-genero-mexico': 'https://www.caiinno.org/wp-content/uploads/2017/05/emprendimiento-y-g%C3%A9nero.pdf',
-      'valores-negocios-emprendimiento': 'https://www.caiinno.org/wp-content/uploads/2017/07/valores-en-los-negocios.pdf',
-      'emprendimiento-genero': 'https://www.caiinno.org/wp-content/uploads/2017/07/emprendimiento-y-genero.pdf',
-      'evaluacion-participativa': 'https://www.caiinno.org/wp-content/uploads/2017/07/EVALUACO%C3%ACN-1.pdf',
-      'metodologia-taller': 'https://www.caiinno.org/wp-content/uploads/2017/07/Metodolog%C3%ADa-del-proyecto-Taller-Emprendimiento-con-Valores.pdf',
-      'implementacion-taller': 'https://www.caiinno.org/wp-content/uploads/2017/07/Implementaci%C3%B3n-Taller-Emprendimiento-con-Valores.pdf'
+      'formacion-civica-etica': '/publicaciones/16/formacion-civica1.pdf',
+      'resumen-ejecutivo': '/publicaciones/16/Resumen-ejecutivo.pdf',
+      'emprendimiento-genero-mexico': '/publicaciones/16/emprendimiento-y-g%C3%A9nero.pdf',
+      'valores-negocios-emprendimiento': '/publicaciones/16/valores-en-los-negocios.pdf',
+      'emprendimiento-genero': '/publicaciones/16/emprendimiento-y-genero.pdf',
+      'evaluacion-participativa': '/publicaciones/16/EVALUACO%C3%ACN-1.pdf',
+      'metodologia-taller': '/publicaciones/16/Metodolog%C3%ADa-del-proyecto-Taller-Emprendimiento-con-Valores.pdf',
+      'implementacion-taller': '/publicaciones/16/Implementaci%C3%B3n-Taller-Emprendimiento-con-Valores.pdf'
     }
   },
   {
@@ -587,7 +587,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/habilidad-innovacion.png',
+        url: '/publicaciones/18/habilidad-innovacion.png',
         alt: 'Habilidades para la Innovación'
       }
     ],
@@ -618,7 +618,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.britishcouncil.org.mx/sites/default/files/resumen_ejecutivo_habilidades_para_la_innovacion.pdf'
+      'spanish-version': '/publicaciones/18/resumen_ejecutivo_habilidades_para_la_innovacion.pdf'
     }
   },
   {
@@ -628,7 +628,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/IndiceNacionalPublication.png',
+        url: '/publicaciones/19/IndiceNacionalPublication.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2025'
       }
     ],
@@ -659,7 +659,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2025/05/CAIINNO-INDICE-2025.pdf'
+      'spanish-version': '/publicaciones/19/CAIINNO-INDICE-2025.pdf'
     }
   }, 
   {
@@ -669,7 +669,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/ÍNDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018.png',
+        url: '/publicaciones/20/ÍNDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018'
       },
       {
@@ -715,9 +715,9 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/INDICE-2018.pdf',
-      'english-version': 'https://www.caiinno.org/wp-content/uploads/2020/06/1.2ENINDICE-CTI-2018-2018-briefing.pdf',
-      'spanish-version-previous': 'https://www.caiinno.org/wp-content/uploads/2016/01/INCTI-CAIINNO2015.pdf'
+      'spanish-version': '/publicaciones/20/INDICE-2018.pdf',
+      'english-version': '/publicaciones/20/1.2ENINDICE-CTI-2018-2018-briefing.pdf',
+      'spanish-version-previous': '/publicaciones/20/INCTI-CAIINNO2015.pdf'
     }
   },
   {
@@ -727,7 +727,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/indice-nacional-de-ciencia-2015.png',
+        url: '/publicaciones/21/indice-nacional-de-ciencia-2015.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2015'
       }
     ],
@@ -758,8 +758,8 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2016/01/INCTI-CAIINNO2015.pdf',
-      'english-version': 'https://www.caiinno.org/wp-content/uploads/2020/06/EN-Briefing-INCTI-CAIINNO-2015.pdf'
+      'spanish-version': '/publicaciones/21/INCTI-CAIINNO2015.pdf',
+      'english-version': '/publicaciones/21/EN-Briefing-INCTI-CAIINNO-2015.pdf'
     }
   },
   {
@@ -769,7 +769,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/PanoramaPropiedadIntelectualMexico.png',
+        url: '/publicaciones/22/PanoramaPropiedadIntelectualMexico.png',
         alt: 'PANORAMA DE LA PROPIEDAD INTELECTUAL EN MÉXICO: OTRA PERSPECTIVA'
       }
     ],
@@ -800,7 +800,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2016/08/Estado-general-de-la-propiedad-intelectual-en-M%C3%A9xico.pdf'
+      'spanish-version': '/publicaciones/22/Estado-general-de-la-propiedad-intelectual-en-M%C3%A9xico.pdf'
     }
   },
   {
@@ -810,7 +810,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/EmprendimientoYGeneroEnMexico.png',
+        url: '/publicaciones/23/EmprendimientoYGeneroEnMexico.png',
         alt: 'EMPRENDIMIENTO Y GÉNERO EN MÉXICO'
       }
     ],
@@ -841,7 +841,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2017/05/emprendimiento-y-g%C3%A9nero.pdf'
+      'spanish-version': '/publicaciones/23/emprendimiento-y-g%C3%A9nero.pdf'
     }
   },
   {
@@ -851,7 +851,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/PatentesVerdesEnElPais.png',
+        url: '/publicaciones/24/PatentesVerdesEnElPais.png',
         alt: 'PATENTES VERDES EN  EL PAÍS'
       }
     ],
@@ -882,7 +882,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2025/06/patentesverdesenelpais.pdf'
+      'spanish-version': '/publicaciones/24/patentesverdesenelpais.pdf'
     }
   },
   {
@@ -892,7 +892,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/mujeres-inventoras-patentando-en-mexico.png',
+        url: '/publicaciones/25/mujeres-inventoras-patentando-en-mexico.png',
         alt: 'Mujeres Inventoras: Patentando en México'
       }
     ],
@@ -929,8 +929,8 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/Mujeres-Inventoras.pdf',
-      'english-version': 'https://www.caiinno.org/wp-content/uploads/2020/07/Women-inventors.pdf'
+      'spanish-version': '/publicaciones/25/Mujeres-Inventoras.pdf',
+      'english-version': '/publicaciones/25/Women-inventors.pdf'
     }
   },
   {
@@ -940,7 +940,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/FormacionCivicaYEticaEnMexico.png',
+        url: '/publicaciones/26/FormacionCivicaYEticaEnMexico.png',
         alt: 'Formación Cívica y Ética en México'
       }
     ],
@@ -972,7 +972,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2017/07/formacion-civica1.pdf'
+      'spanish-version': '/publicaciones/26/formacion-civica1.pdf'
     }
   },
   {
@@ -982,7 +982,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/ObservatorioElectoralDeCienciaTecnologiaRamo381415.png',
+        url: '/publicaciones/27/ObservatorioElectoralDeCienciaTecnologiaRamo381415.png',
         alt: 'Observatorio Electoral de Ciencia y Tecnología Ramo 38'
       }
     ],
@@ -1014,7 +1014,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2016/03/Publicaci%C3%B3n-ramo38.pdf'
+      'spanish-version': '/publicaciones/27/Publicaci%C3%B3n-ramo38.pdf'
     }
   },
   {
@@ -1024,7 +1024,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publications/ObservatorioElectoralDeCienciaTecnologiaRamo381617.png',
+        url: '/publicaciones/28/ObservatorioElectoralDeCienciaTecnologiaRamo381617.png',
         alt: 'Observatorio Electoral de Ciencia y Tecnología Ramo 38'
       }
     ],
@@ -1056,7 +1056,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/RAMO-38-2016-2017.pdf'
+      'spanish-version': '/publicaciones/28/RAMO-38-2016-2017.pdf'
     }
   },
   {
@@ -1066,7 +1066,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/1/portada.png',
+        url: '/publicaciones/29/portada.png',
         alt: ''
       }
     ],
@@ -1079,6 +1079,11 @@ export const publications: Publication[] = [
             type: 'heading',
             content: 'Descarga nuestra publicación en este link',
             downloadKey: 'spanish-version'
+          },
+          {
+            type: 'heading',
+            content: 'Download the English version of the publication in this link',
+            downloadKey: 'english-version'
           }
         ],
         tags: ['Observatorio Electoral', 'Ciencia', 'Tecnología', 'Ramo 38']
@@ -1089,8 +1094,13 @@ export const publications: Publication[] = [
         content: [
           {
             type: 'heading',
-            content: 'Download our publication in this link',
+            content: 'Descarga nuestra publicación en este link',
             downloadKey: 'spanish-version'
+          },
+          {
+            type: 'heading',
+            content: 'Download the English version of the publication in this link',
+            downloadKey: 'english-version'
           }
         ],
         tags: ['Electoral Observatory', 'Science', 'Technology', 'Branch 38']
@@ -1098,8 +1108,8 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': 'https://www.caiinno.org/wp-content/uploads/2018/12/RAMO-38-2016-2017.pdf',
-      'english-version': 'https://www.caiinno.org/wp-content/uploads/2025/06/mujeresobtentoras2023.pdf'
+      'spanish-version': '/publicaciones/29/MUJERES OBTENTORAS EN MÉXICO DEL 2019 AL 2023-SEMBRANDO EL FUTURO.pdf',
+      'english-version': '/publicaciones/29/WOMEN PLANT BREEDERS IN MEXICO FROM 2019 TO 2023-SOWING THE FUTURE.pdf'
     }
   }
 ];
