@@ -30,13 +30,13 @@ export default function Navbar() {
         <nav className="w-full">
           <div className="flex flex-wrap justify-center px-4">
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xl">
-              <Link href="/" className="hover:underline text-center">Inicio</Link>
-              <Link href="/quienes-somos" className="hover:underline text-center">¿Quiénes somos?</Link>
-              <Link href="/about-us" className="hover:underline text-center">About us</Link>
-              <Link href="/informacion-estadistica" className="hover:underline text-center">Información Estadística</Link>
-              <Link href="/events" className="hover:underline text-center">Eventos</Link>
-              <Link href="/publicaciones" className="hover:underline text-center">Publicaciones</Link>
-              <Link href="/impacto" className="hover:underline text-center">Impacto</Link>
+              <Link href="/" className="hover:underline text-center  mx-5">Inicio</Link>
+              <Link href="/quienes-somos" className="hover:underline text-center  mx-5">¿Quiénes somos?</Link>
+              <Link href="/about-us" className="hover:underline text-center  mx-5">About us</Link>
+              <Link href="/informacion-estadistica" className="hover:underline text-center  mx-5">Información Estadística</Link>
+              <Link href="/events" className="hover:underline text-center  mx-5">Eventos</Link>
+              <Link href="/publicaciones" className="hover:underline text-center  mx-5">Publicaciones</Link>
+              <Link href="/impacto" className="hover:underline text-center  mx-5">Impacto</Link>
             </div>
           </div>
         </nav>

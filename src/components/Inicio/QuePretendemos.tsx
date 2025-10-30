@@ -7,7 +7,7 @@ import { LiaUniversitySolid } from "react-icons/lia";
 import React, { useEffect, useState } from "react";
 import useReveal from "@/hooks/useReveal";
 
-const QuePretendemos = () => {
+const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
   const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.18 });
   const init = reveal?.init;
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
@@ -19,40 +19,92 @@ const QuePretendemos = () => {
     };
   }, [init]);
 
-  const iconData = [
-    {
-      id: 1,
-      icon: GiPublicSpeaker,
-      title: "Política pública",
-      description: "Desarrollamos propuestas de políticas públicas basadas en evidencia científica",
-      position: "top-0 left-1/2 -translate-x-1/2",
-      delay: "140ms"
-    },
-    {
-      id: 2,
-      icon: FaBalanceScale,
-      title: "Agenda de Gobierno",
-      description: "Colaboramos en la construcción de agendas gubernamentales efectivas",
-      position: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2",
-      delay: "200ms"
-    },
-    {
-      id: 3,
-      icon: LiaUniversitySolid,
-      title: "Leyes",
-      description: "Participamos en la creación y análisis de marcos normativos",
-      position: "bottom-0 left-1/2 -translate-x-1/2",
-      delay: "260ms"
-    },
-    {
-      id: 4,
-      icon: TfiAgenda,
-      title: "Agenda pública",
-      description: "Impulsamos temas de interés público en el debate nacional",
-      position: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
-      delay: "320ms"
-    }
-  ];
+  const iconData = {
+    en: [
+      {
+        id: 1,
+        icon: GiPublicSpeaker,
+        title: "Public Policy",
+        description: "We develop public policy proposals based on scientific evidence",
+        position: "top-0 left-1/2 -translate-x-1/2",
+        delay: "140ms"
+      },
+      {
+        id: 2,
+        icon: FaBalanceScale,
+        title: "Government Agenda",
+        description: "We collaborate in the construction of effective government agendas",
+        position: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2",
+        delay: "200ms"
+      },
+      {
+        id: 3,
+        icon: LiaUniversitySolid,
+        title: "Laws",
+        description: "We participate in the creation and analysis of regulatory frameworks",
+        position: "bottom-0 left-1/2 -translate-x-1/2",
+        delay: "260ms"
+      },
+      {
+        id: 4,
+        icon: TfiAgenda,
+        title: "Public Agenda",
+        description: "We promote public interest topics in the national debate",
+        position: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
+        delay: "320ms"
+      }
+    ],
+    es: [
+      {
+        id: 1,
+        icon: GiPublicSpeaker,
+        title: "Política pública",
+        description: "Desarrollamos propuestas de políticas públicas basadas en evidencia científica",
+        position: "top-0 left-1/2 -translate-x-1/2",
+        delay: "140ms"
+      },
+      {
+        id: 2,
+        icon: FaBalanceScale,
+        title: "Agenda de Gobierno",
+        description: "Colaboramos en la construcción de agendas gubernamentales efectivas",
+        position: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2",
+        delay: "200ms"
+      },
+      {
+        id: 3,
+        icon: LiaUniversitySolid,
+        title: "Leyes",
+        description: "Participamos en la creación y análisis de marcos normativos",
+        position: "bottom-0 left-1/2 -translate-x-1/2",
+        delay: "260ms"
+      },
+      {
+        id: 4,
+        icon: TfiAgenda,
+        title: "Agenda pública",
+        description: "Impulsamos temas de interés público en el debate nacional",
+        position: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
+        delay: "320ms"
+      }
+    ],
+  }
+
+  const impactData = {
+    en: [
+          { number: "10+", label: "Law Reforms" },
+          { number: "100+", label: "Citations from Public Entities" },
+          { number: "4", label: "Sectors" },
+          { number: "19", label: "Publications" }
+        ],
+    es: [
+          { number: "10+", label: "Reformas de ley" },
+          { number: "100+", label: "Citas de entes públicos" },
+          { number: "4", label: "Sectores" },
+          { number: "19", label: "Publicaciones" }
+        ]
+  }
+   
 
   return (
     <section id="que-pretendemos" className="relative min-h-screen bg-gradient-to-br from-white via-blue-100 to-indigo-200/90 py-6 sm:py-8 md:py-10 overflow-hidden flex flex-col">
@@ -99,7 +151,7 @@ const QuePretendemos = () => {
               <div className="absolute inset-2 sm:inset-4 bg-gradient-to-br from-white/40 to-white/10 backdrop-blur-sm rounded-full border border-white/30"></div>
               
               {/* Círculos de los iconos */}
-              {iconData.map((item) => (
+              {iconData[language].map((item) => (
                 <div
                   key={item.id}
                   data-reveal
@@ -177,12 +229,7 @@ const QuePretendemos = () => {
 
         {/* Sección de estadísticas - Más compacta */}
         <div className="mt-4 sm:mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
-          {[
-            { number: "10+", label: "Reformas de ley" },
-            { number: "100+", label: "Citas de entes públicos" },
-            { number: "4", label: "Sectores" },
-            { number: "19", label: "Publicaciones" }
-          ].map((stat, index) => (
+          {impactData[language].map((stat, index) => (
             <div 
               key={index}
               data-reveal

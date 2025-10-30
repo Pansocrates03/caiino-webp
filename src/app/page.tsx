@@ -20,7 +20,7 @@ export default function Home() {
       {/* Sections */}
       <QuienesSomos />
       <NuestroObjetivo/>
-      <QuePretendemos />
+      <QuePretendemos language="es" />
       <ComoLoHacemos />
       <ImpactoSection />
       <PublicationsCarousel />

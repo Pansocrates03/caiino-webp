@@ -14,7 +14,7 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export', // Quitar si se usa SSR, dejar solo para exportacion estatica
+  //output: 'export', // Quitar si se usa SSR, dejar solo para exportacion estatica
 };
 
 module.exports = nextConfig;
