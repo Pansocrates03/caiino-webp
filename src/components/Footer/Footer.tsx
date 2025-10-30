@@ -84,11 +84,6 @@ export default function Footer() {
                     Información Estadística
                   </Link>
                 </li>
-                <li>
-                  <Link href="#" className="hover:underline">
-                    Índice Nacional de CTI 2015
-                  </Link>
-                </li>
               </ul>
             </div>
             <div className="mt-6 md:mt-8">

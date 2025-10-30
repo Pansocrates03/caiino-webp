@@ -25,43 +25,95 @@ const stepIcons = [
   { icon: CheckCircle, color: "text-emerald-600", bgColor: "bg-emerald-100" },
 ];
 
-const steps = [
-  { 
-    label: "Identificación del problema, reto u oportunidad", 
-    description: "Detectamos y definimos claramente el desafío a abordar mediante investigación y análisis del contexto",
-    image: "/como-lo-hacemos/1.png" 
+const steps = {
+  en: [
+    { 
+      label: "Problem, challenge or opportunity identification", 
+      description: "We detect and clearly define the challenge to be addressed through research and context analysis",
+       
+    },
+    {
+      label: "Preliminary analysis of the problem, challenge or opportunity",
+      description: "We conduct an in-depth study to understand the causes, effects, and dimensions of the identified problem",
+    },
+    { 
+      label: "Identification of possible solutions", 
+      description: "We generate multiple solution alternatives based on evidence and best practices",
+    },
+    {
+      label: "Action plan development",
+      description: "We create a detailed strategy with specific objectives, resources, and timeline",
+    },
+    { 
+      label: "Proposal, action or solution development",
+      description: "We develop the final solution integrating all elements of the action plan",
+    },
+    { 
+      label: "Implementation",
+      description: "We execute the proposed solution with continuous monitoring and necessary adjustments",
+    },
+    {
+      label: "Evaluation",
+      description: "We measure results, impact, and effectiveness to generate learnings and future improvements",
+    },
+  ],
+  es: [
+    { 
+      label: "Identificación del problema, reto u oportunidad", 
+      description: "Detectamos y definimos claramente el desafío a abordar mediante investigación y análisis del contexto",
+       
+    },
+    { 
+      label: "Análisis preliminar del problema, reto u oportunidad", 
+      description: "Realizamos un estudio profundo para comprender las causas, efectos y dimensiones del problema identificado",
+       
+    },
+    { 
+      label: "Identificación de posibles soluciones", 
+      description: "Generamos múltiples alternativas de solución basadas en evidencia y mejores prácticas",
+       
+    },
+    { 
+      label: "Desarrollo de plan de acción", 
+      description: "Creamos una estrategia detallada con objetivos, recursos y cronograma específicos",
+       
+    },
+    { 
+      label: "Desarrollo de propuesta, acción o solución", 
+      description: "Elaboramos la solución final integrando todos los elementos del plan de acción",
+       
+    },
+    { 
+      label: "Implementación", 
+      description: "Ejecutamos la solución propuesta con monitoreo continuo y ajustes necesarios",
+       
+    },
+    { 
+      label: "Evaluación", 
+      description: "Medimos resultados, impacto y efectividad para generar aprendizajes y mejoras futuras",
+       
+    },
+  ]
+}
+
+const translations = {
+  en: {
+    header: "HOW DO WE DO IT?",
+    subheader: ["Our systematic approach ensures effective results through",
+      "7 fundamental stages",
+      "of collaborative work"
+    ],
   },
-  { 
-    label: "Análisis preliminar del problema, reto u oportunidad", 
-    description: "Realizamos un estudio profundo para comprender las causas, efectos y dimensiones del problema identificado",
-    image: "/como-lo-hacemos/1.png" 
-  },
-  { 
-    label: "Identificación de posibles soluciones", 
-    description: "Generamos múltiples alternativas de solución basadas en evidencia y mejores prácticas",
-    image: "/como-lo-hacemos/1.png" 
-  },
-  { 
-    label: "Desarrollo de plan de acción", 
-    description: "Creamos una estrategia detallada con objetivos, recursos y cronograma específicos",
-    image: "/como-lo-hacemos/1.png" 
-  },
-  { 
-    label: "Desarrollo de propuesta, acción o solución", 
-    description: "Elaboramos la solución final integrando todos los elementos del plan de acción",
-    image: "/como-lo-hacemos/1.png" 
-  },
-  { 
-    label: "Implementación", 
-    description: "Ejecutamos la solución propuesta con monitoreo continuo y ajustes necesarios",
-    image: "/como-lo-hacemos/1.png" 
-  },
-  { 
-    label: "Evaluación", 
-    description: "Medimos resultados, impacto y efectividad para generar aprendizajes y mejoras futuras",
-    image: "/como-lo-hacemos/1.png" 
-  },
-];
+  es: {
+    header: "¿CÓMO LO HACEMOS?",
+    subheader: [
+      "Nuestro enfoque sistemático garantiza resultados efectivos a través de", 
+      "7 etapas fundamentales",
+      "de trabajo colaborativo"
+    ],
+  }
+};
+
 
 interface StepComponentProps {
   step: typeof steps[number];
@@ -88,7 +140,7 @@ const StepComponent: React.FC<StepComponentProps> = ({ step, index, isActive, on
       tabIndex={0}
     >
       {/* Línea vertical conectora (excepto en el último) */}
-      {index < steps.length - 1 && (
+      {index < steps.es.length - 1 && (
         <div className="absolute left-8 top-20 w-0.5 h-12 bg-gradient-to-b from-blue-400 to-cyan-400 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-blue-600 to-cyan-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-top"></div>
         </div>
@@ -158,7 +210,7 @@ const StepComponent: React.FC<StepComponentProps> = ({ step, index, isActive, on
   );
 };
 
-const ComoLoHacemos = () => {
+const ComoLoHacemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -208,7 +260,7 @@ const ComoLoHacemos = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <h2 data-reveal className="reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              ¿CÓMO LO HACEMOS?
+              {translations[language].header}
             </h2>
             
             {/* Separador decorativo */}
@@ -219,8 +271,9 @@ const ComoLoHacemos = () => {
             </div>
 
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Nuestro enfoque sistemático garantiza resultados efectivos a través de 
-              <span className="font-semibold text-blue-700"> 7 etapas fundamentales</span> de trabajo colaborativo
+              {translations[language].subheader[0]}
+              <span className="font-semibold text-blue-700"> {translations[language].subheader[1]} </span> 
+              {translations[language].subheader[2]}
             </p>
           </div>
         </div>
@@ -231,7 +284,7 @@ const ComoLoHacemos = () => {
           <div className={`space-y-2 transition-all duration-1000 delay-500 transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            {steps.map((step, index) => (
+            {steps[language].map((step, index) => (
               <StepComponent
                 key={index}
                 step={step}

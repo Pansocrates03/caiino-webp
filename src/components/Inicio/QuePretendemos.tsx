@@ -104,7 +104,30 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
           { number: "19", label: "Publicaciones" }
         ]
   }
-   
+  
+  const translations = {
+    en: {
+      title: "WHAT DO WE AIM FOR?",
+      description: [
+        "Collaborate with academia, government, and industry to achieve our goal. This through",
+        "participation and impact",
+        "in 4 areas:"
+      ],
+      impacto: "Impact",
+      multisectorial: "Multisectoral"
+    
+    },
+    es: {
+      title: "¿QUÉ PRETENDEMOS?",
+      description: [
+        "Colaborar con la academia, gobierno e industria para generar y cumplir nuestro objetivo. Esto a través de la",
+        "participación e impacto",
+        "en 4 rubros:"
+      ],
+      impacto: "Impacto",
+      multisectorial: "Multisectorial"
+    }
+  }
 
   return (
     <section id="que-pretendemos" className="relative min-h-screen bg-gradient-to-br from-white via-blue-100 to-indigo-200/90 py-6 sm:py-8 md:py-10 overflow-hidden flex flex-col">
@@ -121,7 +144,7 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 reveal bg-gradient-to-r from-blue-800 to-cyan-600 bg-clip-text text-transparent"
             style={{ transitionDelay: "0ms" }}
           >
-            ¿QUÉ PRETENDEMOS?
+            {translations[language].title}
           </h2>
 
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-4 sm:mb-6 rounded-full"></div>
@@ -134,8 +157,9 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
             className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 text-center reveal"
             style={{ transitionDelay: "80ms" }}
           >
-            Colaborar con la academia, gobierno e industria para generar y cumplir nuestro objetivo. 
-            Esto a través de la <span className="font-semibold text-blue-700">participación e impacto</span> en 4 rubros:
+            {translations[language].description[0]}
+            <span className="font-semibold text-blue-700"> {translations[language].description[1]} </span>
+            {translations[language].description[2]}
           </p>
         </div>
 
@@ -220,8 +244,8 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
               style={{ transitionDelay: "400ms" }}
             >
               <div className="text-center bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-6 py-3 sm:py-4 shadow-lg border border-white/50">
-                <p className="text-base sm:text-lg md:text-xl font-semibold text-blue-800 mb-1">Impacto</p>
-                <p className="text-xs sm:text-sm text-blue-600">Multisectorial</p>
+                <p className="text-base sm:text-lg md:text-xl font-semibold text-blue-800 mb-1">{translations[language].impacto}</p>
+                <p className="text-xs sm:text-sm text-blue-600">{translations[language].multisectorial}</p>
               </div>
             </div>
           </div>

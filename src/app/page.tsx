@@ -21,7 +21,7 @@ export default function Home() {
       <QuienesSomos />
       <NuestroObjetivo/>
       <QuePretendemos language="es" />
-      <ComoLoHacemos />
+      <ComoLoHacemos language="es" />
       <ImpactoSection />
       <PublicationsCarousel />
       <PrivacySection/>

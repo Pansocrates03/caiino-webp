@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import useReveal from "@/hooks/useReveal";
 import RevealRightToLeft from "@/cuicui/other/text-animation/reveal-horizontal/RevealRightToLeft"
 import TeamSection from "@/components/TeamSection";
-import { Link } from "lucide-react";
+import Link from 'next/link'
 import ComoLoHacemos from "@/components/Inicio/ComoLoHacemos";
 import QuePretendemos from "@/components/Inicio/QuePretendemos";
 
@@ -102,16 +102,16 @@ export default function AboutUs() {
       <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
         <div data-reveal className="reveal bg-white/80 rounded-2xl shadow-lg p-8 sm:p-12 text-center border border-blue-100 animate-fade-in-up">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 sm:mb-6 text-blue-800">
-            Explora nuestro trabajo
+            Explore our work
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Descubre nuestras investigaciones, estudios y publicaciones más recientes que contribuyen a la innovación y al desarrollo de políticas en México y América Latina.
+            Discover our latest research, studies, and publications that contribute to innovation and policy development in Mexico and Latin America.
           </p>
           <Link
             href="/publicaciones?lang=es"
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            Ver publicaciones
+            View Publications
             <svg
               className="ml-3 w-6 h-6"
               fill="none"

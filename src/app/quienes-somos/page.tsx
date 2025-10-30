@@ -31,8 +31,8 @@ export default function QuienesSomos() {
         </div>
 
         <div className="w-full relative mt-12">
-          <QuePretendemos />
-          <ComoLoHacemos />
+          <QuePretendemos language="es" />
+          <ComoLoHacemos language="es" />
         </div>
 
       </div>
