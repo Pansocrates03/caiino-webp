@@ -55,7 +55,7 @@ export default function AboutUs() {
                   <p className="mb-6">
                     <RevealRightToLeft
                       text={parragraphs[1]}
-                      delay={2000}
+                      delay={500}
                       speed={10}
                       direction="ltr"
                     />
@@ -63,7 +63,7 @@ export default function AboutUs() {
                   <p className="mb-6">
                     <RevealRightToLeft
                       text={parragraphs[2]}
-                      delay={5500}
+                      delay={1300}
                       speed={10}
                       direction="ltr"
                     />
@@ -71,7 +71,7 @@ export default function AboutUs() {
                   <p className="mb-6">
                     <RevealRightToLeft
                       text={parragraphs[3]}
-                      delay={8500}
+                      delay={2000}
                       speed={10}
                       direction="ltr"
                     />

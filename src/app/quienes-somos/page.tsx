@@ -26,7 +26,7 @@ export default function QuienesSomos() {
     <>
       <div className="flex flex-col items-center bg-gradient-to-b from-blue-50 via-white to-white min-h-screen">
         {/* YouTube Video */}
-        <div data-reveal className="reveal w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg mt-8 animate-fade-in">
+        <div data-reveal className="reveal w-full max-w-7xl aspect-video rounded-xl overflow-hidden shadow-lg mt-8 animate-fade-in">
           <LazyYouTube id="0DRcerJtk_c" />
         </div>
 

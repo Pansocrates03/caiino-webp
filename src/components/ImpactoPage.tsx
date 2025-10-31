@@ -43,7 +43,7 @@ export default function InformacionDeReferencia() {
           <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8 rounded-lg  bg-white text-black">
             <div className="relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex-shrink-0">
               <Image
-                src="/LEGISLATIVO.png"
+                src="/icons/LEGISLATIVO.png"
                 alt="icono reformas de ley"
                 fill
                 className="object-contain"
