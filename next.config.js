@@ -2,6 +2,7 @@
 const nextConfig = {
   
   images: {
+    unoptimized: true, // Deshabilita la optimización de imágenes de Next.js
     remotePatterns: [
       {
         protocol: "https",
@@ -14,7 +15,9 @@ const nextConfig = {
       },
     ],
   },
-  //output: 'export', // Quitar si se usa SSR, dejar solo para exportacion estatica
+  output: 'export', // Quitar si se usa SSR, dejar solo para exportacion estatica
+  basePath: '', // Ajustar si se despliega en un subdirectorio
+  trailingSlash: true, // Agregar slash al final de las rutas
 };
 
 module.exports = nextConfig;

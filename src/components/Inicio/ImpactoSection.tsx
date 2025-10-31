@@ -16,9 +16,12 @@ import { useEffect, useState, useRef } from "react";
  * @param {boolean} triggerOnce - Si debe dejar de observar después de ser visible una vez.
  * @returns [React.Ref, boolean] - Un ref para adjuntar al elemento y un booleano 'isVisible'.
  */
-const useElementOnScreen = (options, triggerOnce = true) => {
+const useElementOnScreen = <T extends Element = HTMLDivElement>(
+  options?: IntersectionObserverInit,
+  triggerOnce = true
+): [React.RefObject<T>, boolean] => {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null); // Ref que adjuntaremos al elemento
+  const ref = useRef<T | null>(null) as React.RefObject<T>; // Ref que adjuntaremos al elemento
 
   useEffect(() => {
     const element = ref.current;
@@ -41,7 +44,10 @@ const useElementOnScreen = (options, triggerOnce = true) => {
     observer.observe(element);
 
     // Limpieza: dejamos de observar cuando el componente se desmonta
-    return () => observer.unobserve(element);
+    return () => {
+      // desconectar el observador para evitar fugas
+      observer.disconnect();
+    };
 
   }, [options, triggerOnce]); // 'ref' no es necesario como dependencia
 

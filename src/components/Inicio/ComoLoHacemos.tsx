@@ -9,8 +9,6 @@ import {
   Wrench, 
   Play, 
   CheckCircle,
-  ArrowDown,
-  Target,
   Zap
 } from 'lucide-react';
 
@@ -116,7 +114,7 @@ const translations = {
 
 
 interface StepComponentProps {
-  step: typeof steps[number];
+  step: typeof steps.es[number];
   index: number;
   isActive: boolean;
   onHover: (index: number) => void;
