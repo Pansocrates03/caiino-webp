@@ -1108,7 +1108,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/caiinno-publications/29/MUJERES OBTENTORAS EN MÉXICO DEL 2019 AL 2023-SEMBRANDO EL FUTURO.pdf',
+      'spanish-version': '/caiinno-publications/29/MUJERES OBTENTORAS EN MEXICO DEL 2019 AL 2023-SEMBRANDO EL FUTURO.pdf',
       'english-version': '/caiinno-publications/29/WOMEN PLANT BREEDERS IN MEXICO FROM 2019 TO 2023-SOWING THE FUTURE.pdf'
     }
   }
