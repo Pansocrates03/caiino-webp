@@ -8,13 +8,13 @@ export const publications: Publication[] = [
         media: [
             {
                 type: 'image',
-                url: '/publicaciones/1/patentes-verdes-en-mexico.png',
+                url: '/caiinno-publications/1/patentes-verdes-en-mexico.png',
                 alt: 'Patentes verdes en México'
             }
         ],
         downloadLink: {
-            'spanish-version': '/publicaciones/1/Patentes-verdes-final-CAIINNO.pdf',
-            'english-version': '/publicaciones/1/fi-Green-Patents-and-Gender-Identification-in-Mexi_241028_162912.pdf'  
+            'spanish-version': '/caiinno-publications/1/Patentes-verdes-final-CAIINNO.pdf',
+            'english-version': '/caiinno-publications/1/fi-Green-Patents-and-Gender-Identification-in-Mexi_241028_162912.pdf'  
         },
         multilingual: {
             es: {
@@ -68,14 +68,14 @@ export const publications: Publication[] = [
         media: [
             {
                 type: 'image',
-                url: '/publicaciones/2/glipa_pres.png',
+                url: '/caiinno-publications/2/glipa_pres.png',
                 alt: 'Mujeres Inventoras América Latina'
             }
         ],
         downloadLink: {
-            'spanish-version': '/publicaciones/2/Mujeres-CAIINNO-GLIPA.pdf',
-            'english-version': '/publicaciones/2/INGLES-CAIINNO-GLIPA.pdf',
-            'portugues-version': '/publicaciones/2/PORTUGUES-CAIINNO-GLIPA.pdf'
+            'spanish-version': '/caiinno-publications/2/Mujeres-CAIINNO-GLIPA.pdf',
+            'english-version': '/caiinno-publications/2/INGLES-CAIINNO-GLIPA.pdf',
+            'portugues-version': '/caiinno-publications/2/PORTUGUES-CAIINNO-GLIPA.pdf'
         },
         multilingual: {
             es: {
@@ -139,13 +139,13 @@ export const publications: Publication[] = [
         media: [
           {
             type: 'image',
-            url: '/publicaciones/3/automat.jpg',
+            url: '/caiinno-publications/3/automat.jpg',
             alt: 'Automatización de empleos en la economía creativa'
           }
         ],
         downloadLink: {
-          'spanish-version': '/publicaciones/3/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
-          'english-version': '/publicaciones/3/PROBABILITY-OF-JOB-AUTOMATION-IN-THE-MEXICAN-CREATIVE-ECONOMY.pdf'
+          'spanish-version': '/caiinno-publications/3/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
+          'english-version': '/caiinno-publications/3/PROBABILITY-OF-JOB-AUTOMATION-IN-THE-MEXICAN-CREATIVE-ECONOMY.pdf'
         },
         multilingual: {
           es: {
@@ -199,13 +199,13 @@ export const publications: Publication[] = [
        media: [
          {
            type: 'image',
-           url: '/publicaciones/4/ecm-1.png',
+           url: '/caiinno-publications/4/ecm-1.png',
            alt: 'Economía Creativa México'
          }
       ],
       downloadLink: {
-        'spanish-version': '/publicaciones/4/Economia-Creativa.pdf',
-        'english-version': '/publicaciones/4/Creative-Economy-final.pdf'
+        'spanish-version': '/caiinno-publications/4/Economia-Creativa.pdf',
+        'english-version': '/caiinno-publications/4/Creative-Economy-final.pdf'
       },
       multilingual: {
         es: {
@@ -259,12 +259,12 @@ export const publications: Publication[] = [
       media: [
         {
           type: 'image',
-          url: '/publicaciones/5/bi_slider.jpg',
+          url: '/caiinno-publications/5/bi_slider.jpg',
           alt: 'Economía Creativa'
         },
         {
           type: 'image',
-          url: '/publicaciones/5/convocatoria-a-investigadores.png',
+          url: '/caiinno-publications/5/convocatoria-a-investigadores.png',
           alt: 'Economía Creativa'
         },
         {
@@ -274,8 +274,8 @@ export const publications: Publication[] = [
         }
       ],
       downloadLink: {
-        'spanish-version': '/publicaciones/5/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
-        'english-version': '/publicaciones/5/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
+        'spanish-version': '/caiinno-publications/5/Economia-Conocimiento-y-Creativa-CAIINNO-BID.pdf',
+        'english-version': '/caiinno-publications/5/Knowledge-economy-and-creative-economy-CAIINNO-BID.pdf'
       },
       multilingual: {
         es: {
@@ -365,7 +365,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/7/mujeres-inventoras.png',
+        url: '/caiinno-publications/7/mujeres-inventoras.png',
         alt: 'Imagen Mujeres Inventoras'
       },
       {
@@ -375,8 +375,8 @@ export const publications: Publication[] = [
       }
     ],
     downloadLink: {
-      'spanish-version': '/publicaciones/7/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
-      'english-version': '/publicaciones/7/Mexican-women-inventors-CAIINNO.pdf'
+      'spanish-version': '/caiinno-publications/7/Mujeres-Inventoras-2017-2020_CAIINNO.pdf',
+      'english-version': '/caiinno-publications/7/Mexican-women-inventors-CAIINNO.pdf'
     },
     multilingual: {
       es: {
@@ -464,7 +464,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/13/fesf.png',
+        url: '/caiinno-publications/13/fesf.png',
         alt: 'Propiedad Intelectual para el Desarrollo de México'
       }
     ],
@@ -495,7 +495,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/13/PI-Algunas-Propuestas-CAIINNO.pdf'
+      'spanish-version': '/caiinno-publications/13/PI-Algunas-Propuestas-CAIINNO.pdf'
     }
   },  
   {
@@ -505,7 +505,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/16/formacion-ciudadana-emprendedores.jpg',
+        url: '/caiinno-publications/16/formacion-ciudadana-emprendedores.jpg',
         alt: 'Formación Ciudadana para Emprendedores'
       },
       {
@@ -570,14 +570,14 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'formacion-civica-etica': '/publicaciones/16/formacion-civica1.pdf',
-      'resumen-ejecutivo': '/publicaciones/16/Resumen-ejecutivo.pdf',
-      'emprendimiento-genero-mexico': '/publicaciones/16/emprendimiento-y-g%C3%A9nero.pdf',
-      'valores-negocios-emprendimiento': '/publicaciones/16/valores-en-los-negocios.pdf',
-      'emprendimiento-genero': '/publicaciones/16/emprendimiento-y-genero.pdf',
-      'evaluacion-participativa': '/publicaciones/16/EVALUACO%C3%ACN-1.pdf',
-      'metodologia-taller': '/publicaciones/16/Metodolog%C3%ADa-del-proyecto-Taller-Emprendimiento-con-Valores.pdf',
-      'implementacion-taller': '/publicaciones/16/Implementaci%C3%B3n-Taller-Emprendimiento-con-Valores.pdf'
+      'formacion-civica-etica': '/caiinno-publications/16/formacion-civica1.pdf',
+      'resumen-ejecutivo': '/caiinno-publications/16/Resumen-ejecutivo.pdf',
+      'emprendimiento-genero-mexico': '/caiinno-publications/16/emprendimiento-y-g%C3%A9nero.pdf',
+      'valores-negocios-emprendimiento': '/caiinno-publications/16/valores-en-los-negocios.pdf',
+      'emprendimiento-genero': '/caiinno-publications/16/emprendimiento-y-genero.pdf',
+      'evaluacion-participativa': '/caiinno-publications/16/EVALUACO%C3%ACN-1.pdf',
+      'metodologia-taller': '/caiinno-publications/16/Metodolog%C3%ADa-del-proyecto-Taller-Emprendimiento-con-Valores.pdf',
+      'implementacion-taller': '/caiinno-publications/16/Implementaci%C3%B3n-Taller-Emprendimiento-con-Valores.pdf'
     }
   },
   {
@@ -587,7 +587,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/18/habilidad-innovacion.png',
+        url: '/caiinno-publications/18/habilidad-innovacion.png',
         alt: 'Habilidades para la Innovación'
       }
     ],
@@ -618,7 +618,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/18/resumen_ejecutivo_habilidades_para_la_innovacion.pdf'
+      'spanish-version': '/caiinno-publications/18/resumen_ejecutivo_habilidades_para_la_innovacion.pdf'
     }
   },
   {
@@ -628,7 +628,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/19/IndiceNacionalPublication.png',
+        url: '/caiinno-publications/19/IndiceNacionalPublication.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2025'
       }
     ],
@@ -659,7 +659,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/19/CAIINNO-INDICE-2025.pdf'
+      'spanish-version': '/caiinno-publications/19/CAIINNO-INDICE-2025.pdf'
     }
   }, 
   {
@@ -669,7 +669,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/20/ÍNDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018.png',
+        url: '/caiinno-publications/20/ÍNDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2018'
       },
       {
@@ -715,9 +715,9 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/20/INDICE-2018.pdf',
-      'english-version': '/publicaciones/20/1.2ENINDICE-CTI-2018-2018-briefing.pdf',
-      'spanish-version-previous': '/publicaciones/20/INCTI-CAIINNO2015.pdf'
+      'spanish-version': '/caiinno-publications/20/INDICE-2018.pdf',
+      'english-version': '/caiinno-publications/20/1.2ENINDICE-CTI-2018-2018-briefing.pdf',
+      'spanish-version-previous': '/caiinno-publications/20/INCTI-CAIINNO2015.pdf'
     }
   },
   {
@@ -727,7 +727,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/21/indice-nacional-de-ciencia-2015.png',
+        url: '/caiinno-publications/21/indice-nacional-de-ciencia-2015.png',
         alt: 'INDICE-NACIONAL-DE-CIENCIA-TECNOLOGÍA-E-INNOVACIÓN-2015'
       }
     ],
@@ -758,8 +758,8 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/21/INCTI-CAIINNO2015.pdf',
-      'english-version': '/publicaciones/21/EN-Briefing-INCTI-CAIINNO-2015.pdf'
+      'spanish-version': '/caiinno-publications/21/INCTI-CAIINNO2015.pdf',
+      'english-version': '/caiinno-publications/21/EN-Briefing-INCTI-CAIINNO-2015.pdf'
     }
   },
   {
@@ -769,7 +769,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/22/PanoramaPropiedadIntelectualMexico.png',
+        url: '/caiinno-publications/22/PanoramaPropiedadIntelectualMexico.png',
         alt: 'PANORAMA DE LA PROPIEDAD INTELECTUAL EN MÉXICO: OTRA PERSPECTIVA'
       }
     ],
@@ -800,7 +800,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/22/Estado-general-de-la-propiedad-intelectual-en-M%C3%A9xico.pdf'
+      'spanish-version': '/caiinno-publications/22/Estado-general-de-la-propiedad-intelectual-en-M%C3%A9xico.pdf'
     }
   },
   {
@@ -810,7 +810,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/23/EmprendimientoYGeneroEnMexico.png',
+        url: '/caiinno-publications/23/EmprendimientoYGeneroEnMexico.png',
         alt: 'EMPRENDIMIENTO Y GÉNERO EN MÉXICO'
       }
     ],
@@ -841,7 +841,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/23/emprendimiento-y-g%C3%A9nero.pdf'
+      'spanish-version': '/caiinno-publications/23/emprendimiento-y-g%C3%A9nero.pdf'
     }
   },
   {
@@ -851,7 +851,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/24/PatentesVerdesEnElPais.png',
+        url: '/caiinno-publications/24/PatentesVerdesEnElPais.png',
         alt: 'PATENTES VERDES EN  EL PAÍS'
       }
     ],
@@ -882,7 +882,7 @@ export const publications: Publication[] = [
       }
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/24/patentesverdesenelpais.pdf'
+      'spanish-version': '/caiinno-publications/24/patentesverdesenelpais.pdf'
     }
   },
   {
@@ -892,7 +892,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/25/mujeres-inventoras-patentando-en-mexico.png',
+        url: '/caiinno-publications/25/mujeres-inventoras-patentando-en-mexico.png',
         alt: 'Mujeres Inventoras: Patentando en México'
       }
     ],
@@ -929,8 +929,8 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/25/Mujeres-Inventoras.pdf',
-      'english-version': '/publicaciones/25/Women-inventors.pdf'
+      'spanish-version': '/caiinno-publications/25/Mujeres-Inventoras.pdf',
+      'english-version': '/caiinno-publications/25/Women-inventors.pdf'
     }
   },
   {
@@ -940,7 +940,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/26/FormacionCivicaYEticaEnMexico.png',
+        url: '/caiinno-publications/26/FormacionCivicaYEticaEnMexico.png',
         alt: 'Formación Cívica y Ética en México'
       }
     ],
@@ -972,7 +972,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/26/formacion-civica1.pdf'
+      'spanish-version': '/caiinno-publications/26/formacion-civica1.pdf'
     }
   },
   {
@@ -982,7 +982,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/27/ObservatorioElectoralDeCienciaTecnologiaRamo381415.png',
+        url: '/caiinno-publications/27/ObservatorioElectoralDeCienciaTecnologiaRamo381415.png',
         alt: 'Observatorio Electoral de Ciencia y Tecnología Ramo 38'
       }
     ],
@@ -1014,7 +1014,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/27/Publicaci%C3%B3n-ramo38.pdf'
+      'spanish-version': '/caiinno-publications/27/Publicaci%C3%B3n-ramo38.pdf'
     }
   },
   {
@@ -1024,7 +1024,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/28/ObservatorioElectoralDeCienciaTecnologiaRamo381617.png',
+        url: '/caiinno-publications/28/ObservatorioElectoralDeCienciaTecnologiaRamo381617.png',
         alt: 'Observatorio Electoral de Ciencia y Tecnología Ramo 38'
       }
     ],
@@ -1056,7 +1056,7 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/28/RAMO-38-2016-2017.pdf'
+      'spanish-version': '/caiinno-publications/28/RAMO-38-2016-2017.pdf'
     }
   },
   {
@@ -1066,7 +1066,7 @@ export const publications: Publication[] = [
     media: [
       {
         type: 'image',
-        url: '/publicaciones/29/portada.png',
+        url: '/caiinno-publications/29/portada.png',
         alt: ''
       }
     ],
@@ -1108,8 +1108,8 @@ export const publications: Publication[] = [
       },
     },
     downloadLink: {
-      'spanish-version': '/publicaciones/29/MUJERES OBTENTORAS EN MÉXICO DEL 2019 AL 2023-SEMBRANDO EL FUTURO.pdf',
-      'english-version': '/publicaciones/29/WOMEN PLANT BREEDERS IN MEXICO FROM 2019 TO 2023-SOWING THE FUTURE.pdf'
+      'spanish-version': '/caiinno-publications/29/MUJERES OBTENTORAS EN MÉXICO DEL 2019 AL 2023-SEMBRANDO EL FUTURO.pdf',
+      'english-version': '/caiinno-publications/29/WOMEN PLANT BREEDERS IN MEXICO FROM 2019 TO 2023-SOWING THE FUTURE.pdf'
     }
   }
 ];

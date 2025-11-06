@@ -7,7 +7,7 @@ export const impactos: Event[] = [
     date: '2019',
     images: [
       {
-        url: '/events/premioDATOS/1.jpg',
+        url: '/caiinno-events/premioDATOS/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -18,11 +18,11 @@ export const impactos: Event[] = [
     date: '2022',
     images: [
       {
-        url: '/events/premioIA/1.jpg',
+        url: '/caiinno-events/premioIA/1.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/premioIA/2.jpg',
+        url: '/caiinno-events/premioIA/2.jpg',
         alt: 'Foto del evento 3'
       }
     ]

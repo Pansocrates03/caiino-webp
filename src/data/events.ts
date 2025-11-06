@@ -7,23 +7,23 @@ export const events: Event[] = [
     date: '2014',
     images: [
       {
-        url: '/events/ramo38/portada-ramo.jpg',
+        url: '/caiinno-events/ramo38/portada-ramo.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/ramo38/DSC02808.jpg',
+        url: '/caiinno-events/ramo38/DSC02808.jpg',
         alt: 'Foto del evento 2'
       },
       {
-        url: '/events/ramo38/DSC02813.jpg',
+        url: '/caiinno-events/ramo38/DSC02813.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/ramo38/DSC02814.jpg',
+        url: '/caiinno-events/ramo38/DSC02814.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/ramo38/DSC02841.jpg',
+        url: '/caiinno-events/ramo38/DSC02841.jpg',
         alt: 'Foto del evento 5'
       }
     ]
@@ -34,27 +34,27 @@ export const events: Event[] = [
     date: '2015',
     images: [
       {
-        url: '/events/indiceNacional/portada-incti.jpg',
+        url: '/caiinno-events/indiceNacional/portada-incti.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/indiceNacional/DSC02871.jpg',
+        url: '/caiinno-events/indiceNacional/DSC02871.jpg',
         alt: 'Foto del evento 2'
       },
       {
-        url: '/events/indiceNacional/DSC02881.jpg',
+        url: '/caiinno-events/indiceNacional/DSC02881.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/indiceNacional/DSC02884.jpg',
+        url: '/caiinno-events/indiceNacional/DSC02884.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/indiceNacional/DSC02899.jpg',
+        url: '/caiinno-events/indiceNacional/DSC02899.jpg',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/indiceNacional/DSC02904.jpg',
+        url: '/caiinno-events/indiceNacional/DSC02904.jpg',
         alt: 'Foto del evento 5'
       }
     ]
@@ -65,27 +65,27 @@ export const events: Event[] = [
     date: '2016',
     images: [
       {
-        url: '/events/habilidadesInnovacion/habilidades-innovacion.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/habilidades-innovacion.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/habilidadesInnovacion/DSC02974.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/DSC02974.jpg',
         alt: 'Foto del evento 2'
       },
       {
-        url: '/events/habilidadesInnovacion/DSC02978.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/DSC02978.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/habilidadesInnovacion/DSC02992.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/DSC02992.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/habilidadesInnovacion/DSC02980.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/DSC02980.jpg',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/habilidadesInnovacion/DSC03007.jpg',
+        url: '/caiinno-events/habilidadesInnovacion/DSC03007.jpg',
         alt: 'Foto del evento 5'
       }
     ]
@@ -96,19 +96,19 @@ export const events: Event[] = [
     date: '2016',
     images: [
       {
-        url: '/events/multasElectorales/invitacion-multas-electorales-a-cyt-slide.jpeg',
+        url: '/caiinno-events/multasElectorales/invitacion-multas-electorales-a-cyt-slide.jpeg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/multasElectorales/20160526_122403-1.jpg',
+        url: '/caiinno-events/multasElectorales/20160526_122403-1.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/multasElectorales/20160526_122423.jpg',
+        url: '/caiinno-events/multasElectorales/20160526_122423.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/multasElectorales/88.jpg',
+        url: '/caiinno-events/multasElectorales/88.jpg',
         alt: 'Foto del evento 5'
       }
     ]
@@ -119,23 +119,23 @@ export const events: Event[] = [
     date: '2016',
     images: [
       {
-        url: '/events/seguridadAlimentaria/presentacion.jpeg',
+        url: '/caiinno-events/seguridadAlimentaria/presentacion.jpeg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/seguridadAlimentaria/2.jpg',
+        url: '/caiinno-events/seguridadAlimentaria/2.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/seguridadAlimentaria/3.jpg',
+        url: '/caiinno-events/seguridadAlimentaria/3.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/seguridadAlimentaria/4.jpg',
+        url: '/caiinno-events/seguridadAlimentaria/4.jpg',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/seguridadAlimentaria/5.jpg',
+        url: '/caiinno-events/seguridadAlimentaria/5.jpg',
         alt: 'Foto del evento 6'
       }
     ]
@@ -146,23 +146,23 @@ export const events: Event[] = [
     date: '2017',
     images: [
       {
-        url: '/events/creatividadEmprendedora/1.jpg',
+        url: '/caiinno-events/creatividadEmprendedora/1.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/creatividadEmprendedora/2.jpg',
+        url: '/caiinno-events/creatividadEmprendedora/2.jpg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/creatividadEmprendedora/3.jpg',
+        url: '/caiinno-events/creatividadEmprendedora/3.jpg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/creatividadEmprendedora/4.jpg',
+        url: '/caiinno-events/creatividadEmprendedora/4.jpg',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/creatividadEmprendedora/5.jpg',
+        url: '/caiinno-events/creatividadEmprendedora/5.jpg',
         alt: 'Foto del evento 6'
       }
     ]
@@ -173,51 +173,51 @@ export const events: Event[] = [
     date: '2021',
     images: [
       {
-        url: '/events/YajairaEvent/1.png',
+        url: '/caiinno-events/YajairaEvent/1.png',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/YajairaEvent/2.png',
+        url: '/caiinno-events/YajairaEvent/2.png',
         alt: 'Foto del evento 2'
       },
       {
-        url: '/events/YajairaEvent/3.png',
+        url: '/caiinno-events/YajairaEvent/3.png',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/YajairaEvent/4.png',
+        url: '/caiinno-events/YajairaEvent/4.png',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/YajairaEvent/5.png',
+        url: '/caiinno-events/YajairaEvent/5.png',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/YajairaEvent/6.png',
+        url: '/caiinno-events/YajairaEvent/6.png',
         alt: 'Foto del evento 6'
       },
       {
-        url: '/events/YajairaEvent/7.png',
+        url: '/caiinno-events/YajairaEvent/7.png',
         alt: 'Foto del evento 7'
       },
       {
-        url: '/events/YajairaEvent/8.png',
+        url: '/caiinno-events/YajairaEvent/8.png',
         alt: 'Foto del evento 8'
       },
       {
-        url: '/events/YajairaEvent/9.png',
+        url: '/caiinno-events/YajairaEvent/9.png',
         alt: 'Foto del evento 9'
       },
       {
-        url: '/events/YajairaEvent/10.png',
+        url: '/caiinno-events/YajairaEvent/10.png',
         alt: 'Foto del evento 10'
       },
       {
-        url: '/events/YajairaEvent/11.png',
+        url: '/caiinno-events/YajairaEvent/11.png',
         alt: 'Foto del evento 11'
       },
       {
-        url: '/events/YajairaEvent/12.png',
+        url: '/caiinno-events/YajairaEvent/12.png',
         alt: 'Foto del evento 12'
       }
     ]
@@ -228,7 +228,7 @@ export const events: Event[] = [
     date: '2019',
     images: [
       {
-        url: '/events/premioDATOS/1.jpg',
+        url: '/caiinno-events/premioDATOS/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -239,11 +239,11 @@ export const events: Event[] = [
     date: '2022',
     images: [
       {
-        url: '/events/premioIA/1.jpg',
+        url: '/caiinno-events/premioIA/1.jpg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/premioIA/2.jpg',
+        url: '/caiinno-events/premioIA/2.jpg',
         alt: 'Foto del evento 3'
       }
     ]
@@ -254,7 +254,7 @@ export const events: Event[] = [
     date: '2022',
     images: [
       {
-        url: '/events/patentesVerdes/1.jpeg',
+        url: '/caiinno-events/patentesVerdes/1.jpeg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -265,7 +265,7 @@ export const events: Event[] = [
     date: '2020',
     images: [
       {
-        url: '/events/USAelections/1.jpg',
+        url: '/caiinno-events/USAelections/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -276,7 +276,7 @@ export const events: Event[] = [
     date: '2020',
     images: [
       {
-        url: '/events/DiaMundialPropiedadIntelectual/1.jpg',
+        url: '/caiinno-events/DiaMundialPropiedadIntelectual/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -287,7 +287,7 @@ export const events: Event[] = [
     date: '2018',
     images: [
       {
-        url: '/events/comparoVoto/1.jpg',
+        url: '/caiinno-events/comparoVoto/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -298,7 +298,7 @@ export const events: Event[] = [
     date: '2023',
     images: [
       {
-        url: '/events/MujeresInventoras/1.jpg',
+        url: '/caiinno-events/MujeresInventoras/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -309,7 +309,7 @@ export const events: Event[] = [
     date: '2022',
     images: [
       {
-        url: '/events/PropiedadIntelectual/1.jpg',
+        url: '/caiinno-events/PropiedadIntelectual/1.jpg',
         alt: 'Foto del evento 1'
       }
     ]
@@ -320,11 +320,11 @@ export const events: Event[] = [
     date: '2025',
     images: [
       {
-        url: '/events/TallerPropiedadIntelectual2025/1.jpeg',
+        url: '/caiinno-events/TallerPropiedadIntelectual2025/1.jpeg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/TallerPropiedadIntelectual2025/2.jpeg',
+        url: '/caiinno-events/TallerPropiedadIntelectual2025/2.jpeg',
         alt: 'Foto del evento 2'
       },
     ]
@@ -335,31 +335,31 @@ export const events: Event[] = [
     date: '2025',
     images: [
       {
-        url: '/events/TallerPI2025/1.jpeg',
+        url: '/caiinno-events/TallerPI2025/1.jpeg',
         alt: 'Foto del evento 1'
       },
       {
-        url: '/events/TallerPI2025/2.jpeg',
+        url: '/caiinno-events/TallerPI2025/2.jpeg',
         alt: 'Foto del evento 2'
       },
       {
-        url: '/events/TallerPI2025/3.jpeg',
+        url: '/caiinno-events/TallerPI2025/3.jpeg',
         alt: 'Foto del evento 3'
       },
       {
-        url: '/events/TallerPI2025/4.jpeg',
+        url: '/caiinno-events/TallerPI2025/4.jpeg',
         alt: 'Foto del evento 4'
       },
       {
-        url: '/events/TallerPI2025/5.jpeg',
+        url: '/caiinno-events/TallerPI2025/5.jpeg',
         alt: 'Foto del evento 5'
       },
       {
-        url: '/events/TallerPI2025/6.jpeg',
+        url: '/caiinno-events/TallerPI2025/6.jpeg',
         alt: 'Foto del evento 6'
       },
       {
-        url: '/events/TallerPI2025/7.jpeg',
+        url: '/caiinno-events/TallerPI2025/7.jpeg',
         alt: 'Foto del evento 7'
       },
     ]

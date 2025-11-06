@@ -7,8 +7,6 @@ import Link from 'next/link'
 import ComoLoHacemos from "@/components/Inicio/ComoLoHacemos";
 import QuePretendemos from "@/components/Inicio/QuePretendemos";
 
-import imagen from '/events/premioDatos/1.jpg'
-
 const parragraphs = [
   "The Centro de Análisis para la Investigación en Innovación, A.C. (CAIINNO), is a Mexican think tank established by individuals who completed their studies abroad with the Fulbright scholarship and decided to return to Mexico to bring about positive change in the country.",
 
@@ -83,7 +81,7 @@ export default function AboutUs() {
             <div className="lg:col-span-6 mt-10 lg:mt-0 flex justify-center items-start">
                 <img
                     // Asumiendo que 'imagen' es un objeto de importación de Next.js y tiene la propiedad 'src'
-                    src="/events/premioDatos/1.jpg"
+                    src="https://www.caiinno.org/caiinno-events/premioDATOS/1.jpg"
                     alt="Imagen representativa de la sección Nosotros"
                     // Estilos para mejorar la apariencia de la imagen y hacerla responsiva
                     className="w-full h-auto max-w-sm lg:max-w-full rounded-2xl shadow-xl border-4 border-white transform transition-all hover:scale-[1.02] duration-500 object-cover"

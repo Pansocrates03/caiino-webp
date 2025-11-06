@@ -33,7 +33,7 @@ export default function PublicationsCarousel() {
             {publications.map((pub, index) => (
               <CarouselItem key={pub.id} className="md:basis-1/2 lg:basis-1/3">
                 <Link 
-                  href={`/publicaciones/${pub.slug}`} 
+                  href={`/caiinno-publications/${pub.slug}`} 
                   className="block bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mx-2"
                 >
                   {/* Publication Image */}
