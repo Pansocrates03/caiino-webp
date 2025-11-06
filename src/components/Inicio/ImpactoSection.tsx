@@ -125,7 +125,7 @@ const ImpactoSection = () => {
                 </div>
                 <div className="flex justify-center">
                   <Link
-                    href="impacto/informacion-de-referencia"
+                    href="/impacto/informacion-de-referencia"
                     className="group/btn relative inline-flex items-center gap-2 px-8 py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"
                   >
                     <span className="relative z-10">Saber más</span>
@@ -184,7 +184,7 @@ const ImpactoSection = () => {
                 </div>
                 <div className="flex justify-center">
                   <Link
-                    href="impacto/premios-y-reconocimientos"
+                    href="/impacto/premios-y-reconocimientos"
                     className="group/btn relative inline-flex items-center gap-2 px-8 py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-yellow-500 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/50 hover:-translate-y-1"
                   >
                     <span className="relative z-10">Ver más</span>
