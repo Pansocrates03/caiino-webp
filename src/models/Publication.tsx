@@ -42,7 +42,6 @@ export type PublicationProps = {
     content: ContentSection[];
     downloadLink?: string | DownloadLinks;
     tags?: string[];
-    authors?: string[];
     // Add language prop for component
     language?: 'es' | 'en';
 }
@@ -55,4 +54,39 @@ export type Publication = {
     downloadLink?: string | DownloadLinks;
     // Replace single language content with multilingual
     multilingual: MultilingualContent;
+}
+
+export type NewPublication = {
+    id: string;
+    slug: string;
+    date: string;
+    languages: {
+        es?: {
+            title: string;
+            description: string;
+            image: string;
+            downloadLink: string;
+            tags: string[];
+            youtubeId?: string;
+            otherLinks? : { label: string; url: string }[];
+        };
+        en?: {
+            title: string;
+            description: string;
+            image: string;
+            downloadLink: string;
+            tags: string[];
+            youtubeId?: string;
+            otherLinks? : { label: string; url: string }[];
+        };
+        pt?: {
+            title: string;
+            description: string;
+            image: string;
+            downloadLink: string;
+            tags: string[];
+            youtubeId?: string;
+            otherLinks? : { label: string; url: string }[];
+        };
+    }
 }

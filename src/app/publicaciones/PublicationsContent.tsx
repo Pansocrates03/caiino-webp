@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { publications } from '@/data/publications_test';
+import { publications } from '@/data/publications';
 import Link from 'next/link';
 import Image from 'next/image';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -35,12 +35,14 @@ export default function PublicationsContent() {
       <div className="container mx-auto px-4">
         {/* Adjusted structure for mobile stacking */}
         <div className="flex flex-col items-center mb-12 md:flex-row md:justify-center md:relative">
-          <div className="mb-4 md:absolute md:right-0 md:mb-0"> {/* Added margin-bottom for mobile spacing */}
+          {/* 
+          <div className="mb-4 md:absolute md:right-0 md:mb-0"> {/* Added margin-bottom for mobile spacing 
             <LanguageSwitcher
               currentLanguage={language}
               onLanguageChange={handleLanguageChange}
             />
           </div>
+          */}
           <h1 className="text-4xl md:text-5xl font-bold text-center">
             {pageTitle}
           </h1>
@@ -48,20 +50,21 @@ export default function PublicationsContent() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {publications
+            .filter((pub) => pub.languages[language]) // Ensure publication has content in selected language
             .sort((a, b) => b.date.localeCompare(a.date))
             .map((pub) => {
-              const content = pub.multilingual[language];
+              const content = pub.languages[language]!;
               return (
                 <Link
                   key={pub.id}
                   href={`/publicaciones/${pub.slug}?lang=${language}`}
                   className="group block bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
-                  {pub.media?.[0]?.type === 'image' && (
+                  {pub.languages[language]?.image && (
                     <div className="relative h-64 w-full">
                       <Image
-                        src={pub.media[0].url}
-                        alt={pub.media[0].alt || content.title}
+                        src={pub.languages[language]?.image || pub.languages['es']!.image}
+                        alt={pub.languages[language]?.title || content.title}
                         fill
                         className="object-contain bg-gray-100"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

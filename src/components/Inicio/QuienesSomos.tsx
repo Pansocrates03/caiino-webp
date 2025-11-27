@@ -41,7 +41,7 @@ const QuienesSomos = () => {
               </div>
 
               <div className="lg:w-[65%] xl:w-[60%]">
-                <p data-reveal className="reveal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed lg:leading-relaxed">
+                <p data-reveal className="reveal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed lg:leading-relaxed text-justify">
                   CAIINNO es una <span className="font-semibold">think tank</span> constituida por personas que viven en México después de terminar estudios de posgrado en el extranjero, buscando generar un <span className="font-semibold">cambio positivo en México</span>, aprovechando su experiencia, conocimiento y contactos obtenidos, principalmente como beneficiarios de la <span className="font-semibold">beca Fulbright</span>.
                 </p>
               </div>

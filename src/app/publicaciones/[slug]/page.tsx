@@ -1,6 +1,6 @@
 // publications/[slug]/page.tsx (ACTUALIZADO CON SUSPENSE)
 
-import { publications } from '@/data/publications_test';
+import { publications } from '@/data/publications';
 import { notFound } from 'next/navigation';
 import PublicationPageContent from './PublicationPageContent';
 import { Suspense } from 'react'; // <--- 1. IMPORTA SUSPENSE

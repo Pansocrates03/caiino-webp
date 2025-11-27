@@ -106,7 +106,7 @@ export default function AboutUs() {
             Discover our latest research, studies, and publications that contribute to innovation and policy development in Mexico and Latin America.
           </p>
           <Link
-            href="/publicaciones?lang=es"
+            href="/publicaciones?lang=en"
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             View Publications
