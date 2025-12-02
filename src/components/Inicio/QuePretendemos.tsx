@@ -94,14 +94,12 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
     en: [
           { number: "10+", label: "Law Reforms" },
           { number: "100+", label: "Citations from Public Entities" },
-          { number: "4", label: "Sectors" },
-          { number: "19", label: "Publications" }
+          { number: "40,000,000+", label: "People Impacted" },
         ],
     es: [
           { number: "10+", label: "Reformas de ley" },
           { number: "100+", label: "Citas de entes públicos" },
-          { number: "4", label: "Sectores" },
-          { number: "19", label: "Publicaciones" }
+          { number: "40,000,000+", label: "De personas impactadas" },
         ]
   }
   
@@ -252,7 +250,7 @@ const QuePretendemos: React.FC<{ language: "en" | "es" }> = ({ language }) => {
         </div>
 
         {/* Sección de estadísticas - Más compacta */}
-        <div className="mt-4 sm:mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="mt-4 sm:mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
           {impactData[language].map((stat, index) => (
             <div 
               key={index}

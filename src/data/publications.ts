@@ -11,7 +11,7 @@ export const publications: NewPublication[] = [
         description: 'Análisis de las patentes verdes en México',
         image: '/caiinno-publications/1/portada-es.png',
         downloadLink: '/caiinno-publications/1/Patentes-verdes-final-CAIINNO.pdf',
-        tags: ['Patentes', 'Sustentabilidad', 'Innovación']
+        tags: ['Patentes', 'Sustentabilidad', 'Innovación'],
       },
       en: {
         title: 'Green patents in Mexico',
@@ -32,7 +32,7 @@ export const publications: NewPublication[] = [
         description: 'Estudio sobre mujeres inventoras en América Latina',
         image: '/caiinno-publications/2/portada-es.png',
         downloadLink: '/caiinno-publications/2/Mujeres-CAIINNO-GLIPA.pdf',
-        tags: ['Mujeres Inventoras', 'América Latina', 'Innovación']
+        tags: ['Mujeres Inventoras', 'América Latina', 'Innovación'],
       },
       en: {
         title: 'Women inventors latin america',
@@ -53,14 +53,17 @@ export const publications: NewPublication[] = [
         description: 'Análisis del impacto del COVID-19 en la automatización de empleos del sector creativo',
         image: '/caiinno-publications/3/portada-es.png',
         downloadLink: '/caiinno-publications/3/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
-        tags: ['COVID-19', 'Automatización', 'Economía Creativa']
+        tags: ['COVID-19', 'Automatización', 'Economía Creativa'],
+        otherLinks: [
+          { label: "Download the english version", url: '/caiinno-publications/2/INGLES-CAIINNO-GLIPA.pdf' }
+        ]
       },
       en: {
         title: 'Probability and effect of COVID-19 on job automation in Mexico’s creative ecomony',
         description: 'Analysis of the impact of COVID-19 on job automation in the creative sector',
         image: '/caiinno-publications/3/portada-en.png',
         downloadLink: '/caiinno-publications/3/PROBABILITY-OF-JOB-AUTOMATION-IN-THE-MEXICAN-CREATIVE-ECONOMY.pdf',
-        tags: ['COVID-19', 'Automation', 'Creative Economy']
+        tags: ['COVID-19', 'Automation', 'Creative Economy'],
       }
     }
   },
@@ -93,8 +96,8 @@ export const publications: NewPublication[] = [
       es: {
         title: 'Economía del conocimiento y economía creativa como herramientas para salir de la crisis generada por el COVID-19 en América Latina y el Caribe: un enfoque hacía la Alianza del Pacífico',
         description: 'Estudio sobre la economía creativa',
-        image: '/caiinno-publications/5/portada-es.png',
-        downloadLink: '/caiinno-publications/5/Economia-Creativa.pdf',
+        image: '/caiinno-publications/5/portada-es.jpg',
+        downloadLink: '/caiinno-publications/5/economia-creativa-conocimiento.pdf',
         tags: ['Economía Creativa', 'Innovación'],
         youtubeId: '0M7YtW3MTjs'
       },
@@ -109,7 +112,7 @@ export const publications: NewPublication[] = [
   },
   {
     id: '7',
-    slug: 'mujeres-inventoras',
+    slug: 'mujeres-inventoras-patentando-en-mexico',
     date: '2024',
     languages: {
       es: {
@@ -283,7 +286,7 @@ export const publications: NewPublication[] = [
   },
   {
     id: '25',
-    slug: 'mujeres-inventoras-patentando-en-mexico',
+    slug: 'mujeres-inventoras-patentando-en-mexico-como-vamos',
     date: '2015',
     languages: {
       es: {

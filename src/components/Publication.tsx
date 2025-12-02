@@ -7,6 +7,8 @@ export default function Publication({
   language,
 }: { publication: NewPublication; language: 'es' | 'en' }) {
 
+  const hasEnglishVersion = language === "es" && publication.languages["en"];
+
   console.log("Rendering Publication with language:", language);
 
   return (
@@ -46,6 +48,20 @@ export default function Publication({
             {language==="es" ? "Descargar" : "Download"}
           </a>
         </div>
+
+        {/* EN CASO DE QUE ESTEMOS EN ESPAÑOL Y HAYA VERISON EN INGLES, MOSTRAR LA PUBLICACION EN INGLES */}
+        {hasEnglishVersion && (
+          <div className="text-center mt-8">
+            <a
+              href={publication.languages["en"]?.downloadLink}
+              className="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300"
+            >
+              Download English Version
+            </a>
+          </div>
+        )}
+
+        
         {publication.languages[language]?.otherLinks?.map((section, index) => (
           <div key={index} className="bg-gray-50 p-6 rounded-lg mt-4">
             <h3 className="text-lg font-semibold mb-2">{section.label}</h3>

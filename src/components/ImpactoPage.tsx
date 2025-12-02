@@ -11,21 +11,21 @@ export default function InformacionDeReferencia() {
 
   const [filtros, setFiltros] = useState<{
     año: string[];
-    documento: string;
+    titulo: string;
     tipoUsuario: string;
-    tipoDoc: string;
+    referencia: string;
   }>({
     año: [],
-    documento: '',
+    titulo: '',
     tipoUsuario: '',
-    tipoDoc: ''
+    referencia: ''
   });
 
   const resultados = dataImpacto.filter(item =>
     (filtros.año.length === 0 || filtros.año.includes(item.año.toString())) &&
-    (filtros.documento === '' || item.documento === filtros.documento) &&
+    (filtros.titulo === '' || item.titulo === filtros.titulo) &&
     (filtros.tipoUsuario === '' || item.tipoUsuario === filtros.tipoUsuario) &&
-    (filtros.tipoDoc === '' || item.tipoDoc?.toString() === filtros.tipoDoc)
+    (filtros.referencia === '' || item.referencia === filtros.referencia)
   );
 
   return (
@@ -138,8 +138,8 @@ export default function InformacionDeReferencia() {
                       <tr>
                         <td>{index + 1}</td>
                         <td>{item.año}</td>
-                        <td>{item.usuario}</td>
-                        <td>{item.documento}</td>
+                        <td>{item.autor}</td>
+                        <td>{item.titulo}</td>
                         <td>
                           {item.link && (
                             <a
