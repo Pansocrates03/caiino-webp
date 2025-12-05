@@ -5,6 +5,12 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+const otherLinks = [
+  { url: '/', name: 'Inicio' },
+  { url: '/caiinno-files/nuestra-historia.pdf', name: 'Nuestra historia' },
+  { url: '/aviso-de-privacidad/', name: 'Aviso de privacidad' }
+]
+
 export default function Footer() {
   return (
     <footer className="w-full bg-white">
@@ -79,11 +85,13 @@ export default function Footer() {
             <div className="text-center md:text-right">
               <h2 className="text-xl md:text-2xl font-bold mb-4">Otros</h2>
               <ul className="space-y-2 text-sm md:text-base">
-                <li>
-                  <Link href="#" className="hover:underline">
-                    Información Estadística
-                  </Link>
-                </li>
+                {otherLinks.map(val => (
+                  <li key={val.url}>
+                    <Link href={val.url} className="hover:underline">
+                      {val.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="mt-6 md:mt-8">

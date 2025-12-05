@@ -14,7 +14,7 @@ interface EventCardProps {
 
 export function EventCard({ item }: EventCardProps) {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const formattedDate = format(new Date(item.date), "dd 'de' MMMM yyyy", { locale: es });
+  const formattedDate = item.date.length > 4 ? format(new Date(item.date), "dd 'de' MMMM yyyy", { locale: es }) : item.date;
 
   // Animación de revelado del texto
       const reveal = useReveal({ selector: "[data-reveal]", threshold: 0.5 });

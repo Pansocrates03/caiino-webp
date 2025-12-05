@@ -1,3 +1,7 @@
+/*
+ Esta información se genera a partir de los datos en .csv
+ Se puede buscar un convertidor csv -> json en linea
+*/
 interface tipoImpacto {
   referencia: string;
   autor: string;

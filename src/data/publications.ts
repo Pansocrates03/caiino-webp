@@ -53,10 +53,7 @@ export const publications: NewPublication[] = [
         description: 'Análisis del impacto del COVID-19 en la automatización de empleos del sector creativo',
         image: '/caiinno-publications/3/portada-es.png',
         downloadLink: '/caiinno-publications/3/Automatizacion-COVID-y-Economia-creativa-Final-.pdf',
-        tags: ['COVID-19', 'Automatización', 'Economía Creativa'],
-        otherLinks: [
-          { label: "Download the english version", url: '/caiinno-publications/2/INGLES-CAIINNO-GLIPA.pdf' }
-        ]
+        tags: ['COVID-19', 'Automatización', 'Economía Creativa']
       },
       en: {
         title: 'Probability and effect of COVID-19 on job automation in Mexico’s creative ecomony',
@@ -161,12 +158,12 @@ export const publications: NewPublication[] = [
         otherLinks : [
           { label: 'FOMACIÓN CÍVICA Y ÉTICA EN MÉXICO', url: '/caiinno-publications/16/formacion-civica1.pdf' },
           { label: 'Resumen Ejecutivo "FORMACIÓN CÍVICA Y ÉTICA PARA EMPRENDEDORES"', url: '/caiinno-publications/16/Resumen-ejecutivo.pdf' },
-          { label: 'EMPRENDIMIENTO Y GÉNERO EN MÉXICO', url: '/caiinno-publications/16/emprendimiento-y-g%C3%A9nero.pdf' },
+          { label: 'EMPRENDIMIENTO Y GÉNERO EN MÉXICO', url: '/caiinno-publications/16/emprendimiento-y-genero.pdf' },
           { label: 'VALORES EN LOS NEGOCIOS Y EMPRENDIMIENTO', url: '/caiinno-publications/16/valores-en-los-negocios.pdf' },
           { label: 'EMPRENDIMIENTO Y GÉNERO', url: '/caiinno-publications/16/emprendimiento-y-genero.pdf' },
-          { label: 'EVALUACIÓN PARTICIPATIVA', url: '/caiinno-publications/16/EVALUACO%C3%ACN-1.pdf' },
-          { label: 'METODOLOGÍA DEL TALLER DE "FORMACIÓN CÍVICA Y ÉTICA PARA EMPRENDEDORES"', url: '/caiinno-publications/16/Metodolog%C3%ADa-del-proyecto-Taller-Emprendimiento-con-Valores.pdf' },
-          { label: 'IMPLEMENTACIÓN DEL TALLER DE "FORMACIÓN CÍVICA Y ÉTICA PARA EMPRENDEDORES"', url: '/caiinno-publications/16/Implementaci%C3%B3n-Taller-Emprendimiento-con-Valores.pdf' }
+          { label: 'EVALUACIÓN PARTICIPATIVA', url: '/caiinno-publications/16/EVALUACION.pdf' },
+          { label: 'METODOLOGÍA DEL TALLER DE "FORMACIÓN CÍVICA Y ÉTICA PARA EMPRENDEDORES"', url: '/caiinno-publications/16/Metodologia-del-proyecto-Taller-Emprendimiento-con-Valores.pdf' },
+          { label: 'IMPLEMENTACIÓN DEL TALLER DE "FORMACIÓN CÍVICA Y ÉTICA PARA EMPRENDEDORES"', url: '/caiinno-publications/16/Implementacion-Taller-Emprendimiento-con-Valores.pdf' }
         ]
       },
     }
@@ -251,7 +248,7 @@ export const publications: NewPublication[] = [
         title: 'Panorama de la propiedad intelectual en México: otra perspectiva',
         description: '',
         image: '/caiinno-publications/22/portada-es.png',
-        downloadLink: '/caiinno-publications/22/Estado-general-de-la-propiedad-intelectual-en-M%C3%A9xico.pdf',
+        downloadLink: '/caiinno-publications/22/Estado-general-de-la-propiedad-intelectual-en-Mexico.pdf',
         tags: ['Habilidades', 'Innovación']
       },
     }
@@ -265,7 +262,7 @@ export const publications: NewPublication[] = [
         title: 'Emprendimiento y género en México',
         description: '',
         image: '/caiinno-publications/23/portada-es.png',
-        downloadLink: '/caiinno-publications/23/emprendimiento-y-g%C3%A9nero.pdf',
+        downloadLink: '/caiinno-publications/23/emprendimiento-y-genero.pdf',
         tags: ['Habilidades', 'Innovación']
       },
     }
@@ -328,7 +325,7 @@ export const publications: NewPublication[] = [
         title: 'Observatorio Electoral de Ciencia y Tecnología Ramo 38 (2014-2015)',
         description: '',
         image: '/caiinno-publications/27/portada-es.png',
-        downloadLink: '/caiinno-publications/27/Publicaci%C3%B3n-ramo38.pdf',
+        downloadLink: '/caiinno-publications/27/ramo-38.pdf',
         tags: ['Observatorio Electoral', 'Ciencia', 'Tecnología', 'Ramo 38']
       }
     }
