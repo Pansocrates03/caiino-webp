@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
-type Language = 'es' | 'en';
+type Language = 'es' | 'en' | 'pt';
 
 export default function PublicationsContent() {
   const searchParams = useSearchParams();
@@ -28,7 +28,7 @@ export default function PublicationsContent() {
     router.push(`?${params.toString()}`, { scroll: false });
   };
 
-  const pageTitle = language === 'es' ? 'Publicaciones' : 'Publications';
+  const pageTitle = language === 'es' ? 'Publicaciones' : language === 'pt' ? 'Publicações' : 'Publications';
 
   return (
     <div className="min-h-screen bg-white py-20">

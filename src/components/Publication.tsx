@@ -5,11 +5,26 @@ import PersuasiveYouTube from "@/components/lazyYoutube";
 export default function Publication({
   publication,
   language,
-}: { publication: NewPublication; language: 'es' | 'en' }) {
+}: { publication: NewPublication; language: 'es' | 'en' | 'pt' }) {
 
   const hasEnglishVersion = language === "es" && publication.languages["en"];
+  const hasPortugueseVersion = language === "es" && publication.languages["pt"];
 
-  console.log("Rendering Publication with language:", language);
+  const titleText: Record<string, string> = {
+    es: "Descarga esta publicación",
+    en: "Download this publication",
+    pt: "Baixe esta publicação",
+  };
+  const descriptionText: Record<string, string> = {
+    es: "Descarga la publicación en formato PDF para leerla sin conexión.",
+    en: "Download the publication in PDF format to read it offline.",
+    pt: "Baixe a publicação em formato PDF para ler offline.",
+  };
+  const downloadText: Record<string, string> = {
+    es: "Descargar",
+    en: "Download",
+    pt: "Baixar",
+  };
 
   return (
     <>
@@ -39,13 +54,13 @@ export default function Publication({
       {/* Content Section */}
       <div className="space-y-8 mb-12">
         <div className="bg-gray-50 p-6 rounded-lg">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">{language === "es" ? "Descarga esta publicación" : "Download this publication"}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-4">{language === "es" ? "Descarga la publicación en formato PDF para leerla sin conexión." : "Download the publication in PDF format to read it offline."}</p>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">{titleText[language]}</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-4">{descriptionText[language]}</p>
           <a
             href={publication.languages[language]?.downloadLink}
             className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 text-sm sm:text-base"
           >
-            {language==="es" ? "Descargar" : "Download"}
+            {downloadText[language]} PDF
           </a>
         </div>
 
@@ -57,6 +72,18 @@ export default function Publication({
               className="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300"
             >
               Download English Version
+            </a>
+          </div>
+        )}
+
+        {/* EN CASO DE QUE ESTEMOS EN ESPAÑOL Y HAYA VERISON EN PORTUGUES, MOSTRAR LA PUBLICACION EN PORTUGUES */}
+        {hasPortugueseVersion && (
+          <div className="text-center mt-8">
+            <a
+              href={publication.languages["pt"]?.downloadLink}
+              className="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300"
+            >
+              Baixar versão em português
             </a>
           </div>
         )}

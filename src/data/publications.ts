@@ -40,6 +40,13 @@ export const publications: NewPublication[] = [
         image: '/caiinno-publications/2/portada-en.png',
         downloadLink: '/caiinno-publications/2/INGLES-CAIINNO-GLIPA.pdf',
         tags: ['Women Inventors', 'Latin America', 'Innovation']
+      },
+      pt: {
+        title: 'Mulheres inventoras América Latina',
+        description: 'Estudo sobre mulheres inventoras na América Latina',
+        image: '/caiinno-publications/2/portada-pt.png',
+        downloadLink: '/caiinno-publications/2/PORTUGUES-CAIINNO-GLIPA.pdf',
+        tags: ['Mulheres Inventoras', 'América Latina', 'Inovação']
       }
     }
   },

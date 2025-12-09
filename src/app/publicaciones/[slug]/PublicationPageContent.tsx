@@ -6,7 +6,7 @@ import Publication from '@/components/Publication';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { NewPublication } from '@/models/Publication';
 
-type Language = 'es' | 'en';
+type Language = 'es' | 'en' | 'pt';
 
 // --- PASO 1: Quitar 'language' de los Props ---
 type Props = {
@@ -21,15 +21,7 @@ export default function PublicationPageContent({ publication }: Props) {
   // --- PASO 3: Derivar el idioma DIRECTAMENTE de la URL ---
   // No necesitamos useState ni useEffect. useSearchParams es el estado.
   const langFromParams = searchParams.get('lang');
-  const language: Language = (langFromParams === 'en' || langFromParams === 'es') ? langFromParams : 'es';
-
-  const handleLanguageChange = (newLanguage: Language) => {
-    // Ya no se necesita setLanguage()
-    const params = new URLSearchParams(searchParams.toString());
-    params.set('lang', newLanguage);
-    router.push(`?${params.toString()}`, { scroll: false });
-  };
-
+  const language: Language = (langFromParams === 'en' || langFromParams === 'es' || langFromParams == 'pt') ? langFromParams : 'es';
   const content = publication.languages[language] || publication.languages['es']!; // Fallback to 'es' if selected language not available
 
   return (
