@@ -22,6 +22,7 @@ export default function EventCarousel({ item }: EventProps) {
   const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaApi, setEmblaApi] = useState<any>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   // Initialize autoplay only if there are multiple images
   if (item.images.length > 1 && !autoplay.current) {
@@ -33,8 +34,27 @@ export default function EventCarousel({ item }: EventProps) {
   }
 
   const handleImageLoad = (index: number) => {
-    setLoadedImages(prev => new Set([...prev, index]));
-    if (loadedImages.size === item.images.length - 1) {
+    setLoadedImages((prev) => {
+      const updated = new Set(prev);
+      updated.add(index);
+      return updated;
+    });
+
+    // Verificar si todas las imágenes están cargadas
+    if (loadedImages.size + 1 === item.images.length) {
+      setIsLoading(false);
+    }
+  };
+
+  const handleImageError = (index: number) => {
+    console.error(`Error al cargar la imagen en el índice ${index}`);
+    setLoadedImages((prev) => {
+      const updated = new Set(prev);
+      updated.add(index); // Marcar como "cargada" para evitar bloqueos
+      return updated;
+    });
+
+    if (loadedImages.size + 1 === item.images.length) {
       setIsLoading(false);
     }
   };
@@ -48,6 +68,14 @@ export default function EventCarousel({ item }: EventProps) {
     setEmblaApi(api);
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
+
+  const openDialog = () => {
+    setIsDialogOpen(true);
+  };
 
   return (
     <div className="space-y-4">
@@ -79,9 +107,9 @@ export default function EventCarousel({ item }: EventProps) {
                       </div>
                     </div>
                   )}
-                  <Dialog>
+                  <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                     <DialogTrigger asChild>
-                      <button className="group relative w-full h-full">
+                      <button className="group relative w-full h-full" onClick={openDialog}>
                         <Image
                           src={image.url}
                           alt={image.alt || item.title}
@@ -93,14 +121,15 @@ export default function EventCarousel({ item }: EventProps) {
                           sizes="(max-width: 768px) 100vw, 80vw"
                           priority={index === 0}
                           onLoad={() => handleImageLoad(index)}
+                          onError={() => handleImageError(index)}
                         />
                         <div className="absolute top-2 right-2 p-2 bg-black/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
                           <Maximize2 className="h-4 w-4 text-white" />
                         </div>
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-0">
-                      <div className="relative w-full h-screen max-h-[95vh]">
+                    <DialogContent className="w-[95vw] h-[95vh] max-w-none p-2 bg-black/95 border-none">
+                      <div className="relative w-full h-full flex items-center justify-center">
                         <Image
                           src={image.url}
                           alt={image.alt || item.title}
@@ -110,8 +139,8 @@ export default function EventCarousel({ item }: EventProps) {
                           quality={100}
                         />
                         <button
-                          onClick={() => (document.querySelector('[role="dialog"] button[aria-label="Close"]') as HTMLButtonElement)?.click()}
-                          className="absolute top-4 right-4 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
+                          onClick={closeDialog}
+                          className="absolute top-2 right-2 z-50 p-2 bg-black/70 rounded-full hover:bg-black/90 transition-colors"
                         >
                           <X className="h-6 w-6 text-white" />
                         </button>

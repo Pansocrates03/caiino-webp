@@ -127,6 +127,39 @@ export default function AboutUs() {
         </div>
       </div>
 
+      {/* Sección de "Conoce nuestra historia" */}
+      <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
+        <div data-reveal className="reveal bg-white/80 rounded-2xl shadow-lg p-8 sm:p-12 text-center border border-blue-100 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 sm:mb-6 text-blue-800">
+            Get to Know Our Story
+          </h2>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Learn about our journey, mission, and the impact we've made in fostering innovation and research in Mexico.
+          </p>
+          <a
+            href="/caiinno-files/our-story.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold text-lg rounded-xl hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-400"
+          >
+            Read Our Story
+            <svg
+              className="ml-3 w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
       {/* Sección de equipo */}
       <div className="bg-gradient-to-t from-blue-50 via-white to-white py-12">
         <TeamSection language="english" />

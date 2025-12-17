@@ -187,6 +187,13 @@ export const publications: NewPublication[] = [
         downloadLink: '/caiinno-publications/18/resumen_ejecutivo_habilidades_para_la_innovacion.pdf',
         tags: ['Habilidades', 'Innovación']
       },
+      en: {
+        title: 'Skills for Innovation',
+        description: '',
+        image: '/caiinno-publications/18/portada-en.png',
+        downloadLink: '/caiinno-publications/18/briefing-british-council-en.pdf',
+        tags: ['Skills', 'Innovation']
+      }
     }
   },
   {

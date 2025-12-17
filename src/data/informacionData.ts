@@ -2759,7 +2759,7 @@ export const dataImpacto: tipoImpacto[] = [
     "link": "https://www.proquest.com/docview/2648272143?fromopenview=true&pq-origsite=gscholar&sourcetype=Scholarly%20Journals"
   },
   {
-    "referencia": "habilidades-para-la-innovacion",
+    "referencia": "Habilidades para la Innovación",
     "autor": "Sistema de Información Legislativa",
     "titulo": "Iniciativa que reforma a los artículos 2 y 12 de la ley de ciencia y tecnología, a cargo de la diputada María Eloísa Talavera Hernández, del Grupo Parlamentario del PAN",
     "tipoUsuario": "Legislativo",
@@ -2768,7 +2768,7 @@ export const dataImpacto: tipoImpacto[] = [
     "link": "https://sil.gobernacion.gob.mx/Archivos/Documentos/2018/04/asun_3695597_20180411_1521059640.pdf"
   },
   {
-    "referencia": "habilidades-para-la-innovacion",
+    "referencia": "Habilidades para la Innovación",
     "autor": "Sistema de Información Legislativa",
     "titulo": "Iniciativa que reforma a los artículos 2 y 12 de la ley de ciencia y tecnología, a cargo de la diputada María Eloísa Talavera Hernández, del Grupo Parlamentario del PAN",
     "tipoUsuario": "Legislativo",
